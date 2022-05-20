@@ -1,0 +1,9 @@
+* JS DOM FORM VALUE -> Reading
+	- Cách thao tác với dữ liệu của các thẻ HTML về Form . Chúng ta dùng phương pháp này để đọc và ghi giá trị cho các thẻ trong Form. Đây là 	phần đọc giá trị :
+		var my_value = obj.value
+		// obj phải là một thẻ input, select, hoặc bất kì thẻ nào có thuộc tính value đi kèm
+		// Đối với thẻ select thì nó sẽ trả về value của opotion đang lựa chọn
+		// Kết quả trả về dưới dạng dữ liệu chuỗi
+
+* JS DOM FORM VALUE -> WRITING
+	- VD obj.value ="giá trị mới";

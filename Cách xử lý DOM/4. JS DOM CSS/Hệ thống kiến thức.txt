@@ -1,0 +1,19 @@
+* JS DOM CSS   -> Understanding
+	- VD : obj là đối tượng chúng ta cần thao tác ; khi đó chúng ta có thể sử dụng JS DOM CSS để truy cập giá trị của CSS backgroun-color như 	sau: obj.style.backgroundColor
+	
+* JS DOM CSS -> Reading
+	- Cách đọc một giá trị CSS thông qua cấu trúc này . Gỉa sử obj là đối tượng của chúng ta, khi đó chúng ta có thể đọc một giá trị css như sau 
+		var css_value = objj.style.TEN_JS_DOM_CSS;
+		// style là thuộc tính chứa tất cả các thuộc tính của JS DOM CSS
+		// TEN_JS_DOM_CSS phải viết chính xác phận biệt chữ Hoa và chữ thường
+		// Kết quả trả về dạng chuỗi
+
+* JS DOM CSS -> Writing
+	- Cách đặt giá trị CSS mới cho một JS DOM CSS . Gỉa sử obj là đối tượng, khi đó
+		obj.style.TEN_JS_DOM_CSS ="giá trị mới";
+		//style là thuộc tính chứa tất cả các thuộc tính của JS DOM CSS
+		// TEN_JS_DOM_CSS phải viết chính xác phận biệt chữ Hoa và chữ thường
+		// Gía trị mới đưa phải chính xác khi bạn viết CSS
+
+
+

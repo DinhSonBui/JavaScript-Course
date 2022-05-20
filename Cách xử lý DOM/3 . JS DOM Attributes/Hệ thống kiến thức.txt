@@ -1,0 +1,8 @@
+* JS DOM Attributes -> Reading
+	- Cách tiếp cận và lấy thông tin của các thuộc tính của đối tượng . Ta vẫn ví dụ obj là đối tượng cần thao tác khi đó :
+		 var gia_tri_1 = obj.getAttribute("tên thuộc tính");
+		// Bạn sẽ nhận được giá trị của thuộc tính "tên thuộc tính " của đối tượng obj
+		// Nếu obj là <p class="value-of-class">Nội dung</p> và bạn gọi obj.getAttribute("Class") thì bạn nhận được "value-ofclass"
+* JS DOM Attributes - Writing
+	- Cách đổi giá trị thuộc tính . Ta vẫn ví dụ obj là đối tượng cần thao tác khi đó :
+		obj.setAttribute("tên thuộc tính" , "giá trị mới")

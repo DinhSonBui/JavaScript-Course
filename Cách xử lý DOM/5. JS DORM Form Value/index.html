@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<h1>Pt bậc 2 có dạng ax2 + bx + c = 0</h1>
+	Nhập a vào
+	<input type="text" value="" id="txtA" style="margin-left: 20px; margin-bottom: 10px">
+	<br>
+	Nhập b vào
+	<input type="text" value="" id="txtB" style="margin-left: 20px">
+	<br>
+	Nhập c vào 
+	<input type="text" value="" id="txtC" style="margin-left: 20px">
+	<br>
+	<div onClick="TinhTong()" style="width: 80px; height:20px ; background: #163CF3 ; cursor: pointer ; text-align: center; color: aliceblue ; margin: 20px;" >Tính tổng</div>
+	<script>
+		function TinhTong()
+		{
+			var a = parseInt(document.getElementById("txtA").value);
+			var b = parseInt(document.getElementById("txtB").value);
+			var c= parseInt(document.getElementById("txtC").value);
+			var delta=Math.pow(b,2) - 4 * a * c;
+			if(delta == 0)
+			{
+				var x = (- b /(2*a));
+				alert("x1 = x2 = " + x);
+			}
+			else if(delta > 0){
+				
+				var x1=(-b + Math.sqrt(delta))/ (2 * a);
+				var x2=(-b - Math.sqrt(delta))/ (2 * a);
+				alert("x1 = " + x1 + "và x2 = " + x2);
+			}
+			else{
+				alert("Pt vô nghiệm");
+			}
+			
+		}
+	</script>
+	
+
+</body>
+</html>

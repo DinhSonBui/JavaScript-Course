@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style>
+		.vn
+		{
+			color:red;
+		}
+	</style>
+</head>
+
+<body>
+	<div id ="div1">
+		<p>Try Hard</p>
+		<p id="p1">Đây là nội dung d1</p>
+		<p id="p2" class="para2">Đây là nội dung d2</p>
+	</div>
+	<script>
+		var objS = document.getElementsByTagName("p");
+		/*
+		for(var i=0;i<objS.length;i++)
+		{
+				var content = objS[i].innerHTML;
+				alert(content);
+		}*/
+		var obj1 = document.getElementById("p1");
+		/*obj1.innerHTML = "Nôi dung của thẻ p1 đã được thay đổi";
+		var obj2 = document.getElementById("p2");
+		obj2.outerHTML = "<i>Việt Nam</i>"*/
+		obj1.setAttribute("class","vn" );
+		obj1.setAttribute("my_attribute","class2");
+		obj1.style.color="black";
+	</script>
+</body>
+</html>

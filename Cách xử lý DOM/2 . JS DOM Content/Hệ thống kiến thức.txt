@@ -1,0 +1,18 @@
+* Js DOM Content (Reading)
+	
+	- Khi bạn đã có đối tượng cần thao tác, giờ bạn có thể tiến hành thay đổi hoặc đọc nội dung của thẻ HTML . Gỉa sử obj là đối tượng được chọn 	
+	để thao tác khi đó 
+		+ var html_content_1 =  obj.innerHTML;
+		// Thuộc tính inner sẽ trả về nội dung bên trong đối tượng obj
+		// Gỉa sử obj là <p>Try Hard</p>- > thì nội dung được trả về cho biến html_content_1 là "Try Hard"
+		+ var html_content_2 = obj.outerHTML;
+		// Thuộc tính outer sẽ trả về nội cung bên trong thẻ và cả thẻ nữa
+		// Giair sử obj là <p>Try Hard</p> -> thì nội dung được trả về cho biến html_content_2 là <p>"Try Hard"</p>
+
+* Js DOM Content (Writing)
+	- Bạn đã biết đọc nội dung của đối tượng , bây giờ học cách thay đổi nội dụng của đối tượng . Gỉa sử obj là dối tuộng được chọn cần thao tác 	khi đó :
+		+ obj.innerHTML = "nội dung mới"
+		// Lúc này nội dung trong thẻ html của đối tượng obj được chọn sẽ thay đổi nội dung.
+		+ obj.outerHTML = "<tag>nội dung thẻ mới</tag> "
+		// Lúc này nội dung và thẻ của đối tượng obj sẽ được thay đổi
+

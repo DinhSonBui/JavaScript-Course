@@ -1,0 +1,8 @@
+* Js DOM Selector
+	- Cũng giống như CSS , khi bạn muốn làm việc với đối tượng HTML cụ thể bạn cần xác định được đối tượng đó . Và dưới đây là một số phương pháp 	cơ bản để bạn làm điều đó :
+		+ var obj = document.getElementById("id của thẻ html")   - > trả về 1 đối tượng vì trong một cây Dom các id đều khác nhau
+		+ var objS = document.getElementByTagName("thẻ htmml")  - > trả về nhiều đối tượng vì có thể có nhiều thẻ cùng loại trong tl HTML
+		+ var objS = document.getElementByClasName("class thẻ html") -> trả về nhiều đối tượng vì trong tl HTML có thể xất hiện nhiề class 										cùng tên
+		+ var obj = document.querySelector("CSS Slector")  -> trả về 1 đối tượng vì nố chỉ chọn cái  đối tượng đầu tiên trong các đối tượng
+									Css Slector chọn
+		+ var objS =  document.querySelectorAll("Css Slector") -> trả về nhiều đối tượng vì nó chọn tất cả mọi đối tượng mà Css Slector đã 									chọn
