@@ -1,0 +1,14 @@
+* Các phương thức xử lý mảng trong JavaScript
+	- Trong JavaScript đã tích hợp sẵn các phương thức dùng để xử lý mảng. Với các phương thức này, ta có thể làm được những công việc như: chuyển 	một mảng về dạng chuỗi, thêm hoặc xóa các phần tử mảng, ghép các mảng lại với nhau, . . . .
+	- Dưới đây là bảng tóm tắt một vài phương thức xử lý mảng phổ biến mà ta phải thường hay dùng:
+		Phương thức	Mô tả
+		toString()	Chuyển một mảng về dạng chuỗi ký tự.
+		push()		Thêm một phần tử mới vào vị trí cuối mảng.
+		pop()		Xóa phần tử nằm ở vị trí cuối mảng.
+		unshift()	Thêm một phần tử mới vào vị trí đầu mảng.
+		shift()		Xóa phần tử nằm ở vị trí đầu mảng.
+		concat()	Ghép các mảng con lại với nhau rồi trả về một mảng mới.
+		slice()		Trích xuất một phần của mảng ban đầu rồi trả về một mảng mới.
+		splice()	Thêm hoặc xóa "một hoặc nhiều phần tử" ở vị trí bất kỳ trong mảng.
+		length		Trả về số lượng phần tử của mảng.
+	- Lưu ý: length được gọi là thuộc tính (không phải phương thức)

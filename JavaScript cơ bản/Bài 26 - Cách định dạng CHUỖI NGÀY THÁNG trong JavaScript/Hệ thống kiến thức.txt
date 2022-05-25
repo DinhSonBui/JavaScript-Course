@@ -1,0 +1,70 @@
+* Cách định dạng CHUỖI NGÀY THÁNG trong JavaScript
+	- Trong JavaScript có bốn kiểu cơ bản để định dạng một chuỗi ngày tháng:Short Date , Long Date, Full Date, ISO Date
+		+ Dưới đây là ví dụ minh họa về ngày 12 tháng 3 năm 1974 được định dạng bởi bốn kiểu trên:
+			Kiểu		Định dạng
+			Short Date	"03/12/1974"
+			Long Date	"Mar 12 1974"
+			Full Date	"Tue Mar 12 1974"
+			ISO Date	"1974-03-12"
+	- Short Date
+		+ Một chuỗi ngày tháng được định dạng theo kiểu Short Date sẽ có cấu trúc là: MM/DD/YYYY
+		+ VD        	<script>
+    					var date = new Date("03/12/1974");
+			  	</script>
+	-  Long Date
+		+ Một chuỗi ngày tháng được định dạng theo kiểu Long Date sẽ có cấu trúc là: Month DD YYYY
+		+ Lưu ý:
+			Month là tháng được viết theo tên tiếng anh.(có thể viết đầy đủ như January hoặc viết tắt từ ba ký tự đầu tiên của nó như Jan)
+			Month và DD có thể hoán đổi vị trí cho nhau.
+		+ VD 
+			<script>
+    				var date1 = new Date("March 12 1974");
+    				var date2 = new Date("12 March 1974");
+    				var date3 = new Date("Mar 12 1974");
+   			 	var date4 = new Date("12 Mar 1974");
+			</script>
+	-  Full Date
+		+ Một chuỗi ngày tháng được định dạng theo kiểu Full Date sẽ có cấu trúc là: Day Month DD YYYY
+		+ Lưu ý:
+			Day là ngày trong tuần (hay còn gọi là thứ) được viết theo tên tiếng anh.
+				(có thể viết đầy đủ như Wednesday hoặc viết tắt từ ba ký tự đầu tiên của nó như Wed)
+			Month là tháng được viết theo tên tiếng anh.
+				(có thể viết đầy đủ như January hoặc viết tắt từ ba ký tự đầu tiên của nó như Jan)
+		+ VD 
+			<script>
+    				var date1 = new Date("Tuesday March 12 1974");
+    				var date2 = new Date("Tue Mar 12 1974");
+			</script>
+	- ISO Date
+		+ Một chuỗi ngày tháng được định dạng theo kiểu ISO Date sẽ có cấu trúc là: YYYY-MM-DD
+		+ VD 
+			<script>
+    				var date = new Date("1974-03-12");
+			</script>
+	- Thêm thời gian vào chuỗi ngày tháng
+		+ Để thêm thời gian (giờ, phút, giây) vào chuỗi ngày tháng thì ta đặt dấu cách HH:MM:SS vào phía sau chuỗi ngày tháng.
+		+ Riêng kiểu định dạng ISO Date thì ta đặt THH:MM:SS vào phía sau chuỗi ngày tháng.
+		+ Ví dụ: Tạo đối tượng ngày tháng với thời điểm là: ngày 12 tháng 3 năm 1974, lúc 9 giờ 30 phút
+		<script>
+    			var date1 = new Date("03/12/1974 09:30:00"); //Short Date
+    			var date2 = new Date("Mar 12 1974 09:30:00"); //Long Date
+    			var date3 = new Date("Tue Mar 12 1974 09:30:00"); //Full Date
+    			var date4 = new Date("1974-03-12T09:30:00"); //ISO Date
+		</script>
+	- Chuỗi ngày tháng theo giờ tiêu chuẩn UTC
+		+ Ta có thể thêm chữ Z vào cuối chuỗi ngày tháng để thiết lập chuỗi ngày tháng đó được xác định theo giờ tiêu chuẩn UTC.
+		+ Ví dụ: Tạo đối tượng ngày tháng với thời điểm là: ngày 12 tháng 3 năm 1974, lúc 9 giờ 30 phút (theo giờ tiêu chuẩn UTC)
+		<script>
+    			var date1 = new Date("03/12/1974 09:30:00Z"); //Short Date
+    			var date2 = new Date("Mar 12 1974 09:30:00Z"); //Long Date
+    			var date3 = new Date("Tue Mar 12 1974 09:30:00Z"); //Full Date
+    			var date4 = new Date("1974-03-12T09:30:00Z"); //ISO Date
+    			//Việt Nam trễ hơn giờ tiêu chuẩn 7 tiếng, nên vào thời điểm giờ tiêu chuẩn là 9:30 thì ở Việt Nam sẽ là 16:30
+		</script>
+	- Xác định múi giờ cho chuỗi ngày tháng
+		+ Ta có thể thêm múi giờ vào cuối chuỗi ngày tháng để xác định múi giờ của chuỗi ngày tháng đó.
+		+ Ví dụ: Tạo đối tượng ngày tháng với thời điểm là: ngày 12 tháng 3 năm 1974, lúc 9 giờ 30 phút (theo múi giờ của vùng Trung Âu)
+			<script>
+    				var date = new Date("03/12/1974 09:30:00 GMT+0100 (W. Europe Standard Time)");
+    				//Trung Âu trễ hơn giờ tiêu chuẩn 1 tiếng, Việt Nam trễ hơn giờ tiêu chuẩn 7 tiếng, suy ra Việt Nam trễ hơn Trung Âu 6 				tiếng, nên vào thời điểm Trung Âu là 9:30 thì ở Việt Nam sẽ là 15:30
+			</script>

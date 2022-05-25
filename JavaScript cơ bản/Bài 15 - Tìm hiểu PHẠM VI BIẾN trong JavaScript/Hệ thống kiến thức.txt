@@ -1,0 +1,14 @@
+ * Tìm hiểu PHẠM VI BIẾN trong JavaScript
+	- Phạm vi biến xác định phạm vi mà một biến có thể được sử dụng (truy cập).
+	- Nếu dựa theo phạm vi biến thì biến được chia làm hai loại:
+		+ Biến cục bộ (Local Variable)
+		+ Biến toàn cục (Global Variable)
+	- Biến cục bộ (Local Variable)
+		+ Biến cục bộ là loại biến mà nó được khai báo ở vị trí bên trong một hàm.
+		+ Biến cục bộ chỉ có thể được truy cập ở vị trí bên trong hàm mà nó được khai báo.
+		+ Lưu ý: Vì biến cục bộ chỉ có thể sử dụng bên trong hàm mà nó được khai báo. Nên do đó, với cùng một tên biến, ta có thể khai báo ở 			những hàm khác nhau.
+		+ Các tham số của hàm cũng được xem như biến cục bộ của hàm.
+	-  Biến toàn cục (Global Variable)
+		+ Biến toàn cục là loại biến mà nó được khai báo ở vị trí bên ngoài một hàm.
+		+ Biến toàn cục có thể được truy cập ở bất kỳ vị trí nào trong chương trình JavaScript.
+		+ Lưu ý: Khi ở bên trong một hàm, nếu ta khai báo biến mà thiếu từ khóa var (hay nói cách khác là gán giá trị cho biến trong khi nó 		chưa được khai báo) thì biến đó sẽ trở thành biến toàn cục.

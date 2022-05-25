@@ -1,0 +1,9 @@
+* Toán tử gán trong JavaScript
+ 	- Toán tử gán là toán tử dùng để gán giá trị cho biến
+	- Trong JavaScript, toán tử gán ngoài toán tử = thì còn các toán tử khác như: += , -= , *= , /= , %=
+	- VD x = y 	x = y 
+             x+= y	x = x + y
+ 	     x -= y	x = x - y
+	     x *= y	x = x * y
+	     x /= y	x = x / y
+	     x %= y	x = x % y

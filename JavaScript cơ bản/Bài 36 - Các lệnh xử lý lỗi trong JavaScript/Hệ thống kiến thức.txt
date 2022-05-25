@@ -1,0 +1,28 @@
+* Các lệnh xử lý lỗi trong JavaScript
+	- JavaScript cung cấp cho ta bốn loại lệnh dùng để kiểm soát và xử lý lỗi: try, catch, throw, finally
+	-  Lệnh "try" và "catch" trong JavaScript
+		+ Lệnh try được dùng để kiểm tra (thực thi) một đoạn mã, nếu đoạn mã đó có chứa câu lệnh bị lỗi thì những câu lệnh nằm phía sau câu 		lệnh bị lỗi sẽ không được thực thi. Tuy nhiên, những câu lệnh nằm ngoài lệnh try thì vẫn thực thi bình thường.
+		+ Lệnh try cần phải sử dụng kèm với lệnh catch hoặc lệnh finally
+		(Nhưng thông thường thì lệnh try được sử dụng chung với lệnh catch nhiều hơn)
+		+ Lệnh catch dùng để xác định một đoạn mã và đoạn mã đó sẽ được thực thi nếu đoạn mã bên trong lệnh try có chứa câu lệnh bị lỗi (Điều 		đó đồng nghĩa với việc: nếu đoạn mã bên trong lệnh try không chứa câu lệnh bị lỗi thì đoạn mã bên trong lệnh catch sẽ không được thực 		thi).
+		+ Lưu ý: Lệnh catch phải có một tham số (điển hình ví dụ trên là tham số err), tham số này dùng để lưu trữ một đối tượng, đối tượng 		này chứa các thông tin về lỗi của câu lệnh bị lỗi trong lệnh try.
+	- Lệnh "throw" trong JavaScript
+		+ Lệnh throw thường được đặt bên trong lệnh try
+		+ Lệnh throw có chức năng ném ra một lỗi (hoặc cũng có thể nói là tạo ra một lỗi)
+		+ Lưu ý: Sau khi lệnh throw "được thực thi" thì một lỗi sẽ được tạo ra, điều đó cũng đồng nghĩa với việc câu lệnh bị lỗi. Do đó, những 		câu lệnh còn lại nằm phía sau lệnh throw sẽ không được thực thi.
+	- Lệnh "finally" trong JavaScript
+		+ Lệnh finally thường được đặt phía sau lệnh try hoặc try ... catch
+		+ Lệnh finally dùng để thực thi một đoạn mã mặc định
+		(mặc cho đoạn mã bên trong lệnh try có chứa câu lệnh bị lỗi hay không)
+	- Đối tượng lưu trữ thông tin lỗi
+		+ Lệnh catch bao giờ cũng bắt buộc phải có một tham số, tham số này dùng để lưu trữ một đối tượng và đối tượng này sẽ chứa các thông 			in về lỗi của câu lệnh bị lỗi trong lệnh try.
+		+ Đối tượng lưu trữ thông tin lỗi này có hai thuộc tính:
+			name (trả về tên loại lỗi của câu lệnh bị lỗi)
+			message (trả về thông báo lỗi của câu lệnh bị lỗi)
+		+ Loại lỗi được chia thành năm dạng cơ bản:
+			ReferenceError		Xảy ra khi sử dụng một biến chưa được khai báo.
+			URIError		Xảy ra khi sử dụng các ký tự không hợp lệ trong các hàm xử lý URI.
+			TypeError		Xảy ra khi sử dụng các giá trị có kiểu dữ liệu nằm ngoài mong đợi.
+			RangeError		Xảy ra khi sử dụng một tham số có giá trị nằm ngoài phạm vi giá trị cho phép
+			SyntaxError		Xảy ra khi câu lệnh bị sai cú pháp.
+

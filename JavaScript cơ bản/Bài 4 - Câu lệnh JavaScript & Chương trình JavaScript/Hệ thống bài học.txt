@@ -1,0 +1,11 @@
+* Câu lệnh JavaScript & Chương trình JavaScript
+	- Câu lệnh JavaScript : + có thể hiểu là 1 dòng code ,làm 1 công việc, được thực thi bởi trình duyệt
+				+ Mỗi câu lệnh được kết thúc bằng một dấu " ; ".
+	- Chương trình JavaScript : + Là tập hợp của nhiều câu lệnh Javascript.
+				    + Trong một chương trình JavaScript sẽ thực thi thi chương trình từ dòng lệnh đầu cho đến dòng lệnh cuối (từ trên xuống)
+				    + Nếu câu lệnh ở trên bị lỗi thì các câu lệnh ở phía dưới không được chạy .
+				    + Lưu ý việc sáo trộn thứ tự các dòng code sẽ có thể gây ảnh hưởng tới chương trình.
+				    + Xuống dòng trong chương trình không quan trong , nên xuống dòng sau mỗi dòng lệnh , sẽ khiến cho code của bạn đẹp 
+  				    + Việc thụt lề trong chương trình Javascript không quan trọng , nhưng lên thụt lề một cách hợp lý , sẽ giúp cho lập 
+				      trình viên quản lý chương trình dễ dàng
+				    + Trong chương trình khoảng cách các toản tử không quan trọng , nhưng cách 1 dấu cách nhìn chương trình nó đẹp

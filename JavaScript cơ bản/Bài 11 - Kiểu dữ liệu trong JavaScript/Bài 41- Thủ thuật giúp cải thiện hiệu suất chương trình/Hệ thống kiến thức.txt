@@ -1,0 +1,13 @@
+* Thủ thuật giúp cải thiện hiệu suất chương trình
+	- Tránh khai báo những biến không cần thiết
+		+ Câu lệnh khai báo biến có tốc độ thực thi chậm hơn so với những câu lệnh thông thường, ta không nên khai báo một biến mới nếu như 		không có mục đích sử dụng lại biến đó nhiều lần.
+	- Hạn chế truy cập vào phần tử HTML
+		+ Những câu lệnh truy cập vào phần tử HTML có tốc độ thực thi rất chậm. Nếu muốn truy cập vào cùng một phần tử nhiều lần thì ta nên 		truy cập một lần rồi sau đó lưu nó vào một biến để sử dụng lại.
+		+  Ngoài ra, tốc độ thực thi của những câu lệnh truy cập vào phần tử HTML sẽ càng bị chậm nếu số lượng phần tử trong một trang quá lớn 		(Vì nó phải tìm phần tử phù hợp, ít phần tử thì tìm ra nhanh, nhiều phần tử thì tìm lâu). Cho nên trong quá trình thiết kế giao diện 		của trang, số lượng phần tử HTML ít chừng nào thì tốt chừng nấy.
+	- Tối ưu hóa vòng lặp
+		+ Các vòng lặp như for, while, do while thường được sử dụng rất nhiều trong JavaScript. Nếu ta tối ưu hóa được hết tất cả các vòng lặp 		thì tốc dộ tải trang sẽ được cải thiện đáng kể.
+		+ Vòng lặp dùng để lặp lại việc thực thi một đoạn mã nhiều lần, nếu trong vòng lặp có chứa những những câu lệnh phức tạp thì tốc độ 		thực thi sẽ chậm lại. Do đó, để tăng tốc độ thực thi thì ta nên thay thế những câu lệnh phức tạp bằng những câu lệnh đơn giản hơn.
+	- Không sử dụng từ khóa new
+		+ Chúng ta không nên sử dụng từ khóa new để tạo chuỗi, số, mảng, đối tượng, hàm, .... vì nó có tốc độ thực thi rất chậm.
+	-  Đặt mã JavaScript ở dưới cùng
+		+ Trong quá trình tải trang, các câu lệnh sẽ được thực thi lần lượt theo thứ tự từ trên xuống dưới. Nếu mã HTML được đặt ở trên thì nó 		sẽ được thực thi trước đồng nghĩa với việc giao diện được hiển thị trước (Điều đó tạo cảm giác như trang được tải nhanh). Vì vậy, 			chúng ta nên cố gắng sắp xếp các đoạn mã HTML nằm trên còn mã JavaScript thì nằm ở dưới.

@@ -1,0 +1,22 @@
+* Kĩ thuật tạo một số ngẫu nhiên
+	- Xây dựng hàm dùng để tạo số nguyên ngẫu nhiên
+
+		VD : Tạo một số nguyên ngẫu nhiên trong đoạn từ "min" đến "max" (không bao gồm max)
+		<script>
+    			function TaoSoNgauNhien(min, max){
+        		return Math.floor(Math.random() * (max - min)) + min;
+    			}
+    			var a = TaoSoNgauNhien(1, 10); //Trả về một số ngẫu nhiên từ 1 đến 9
+    			var b = TaoSoNgauNhien(3, 8); //Trả về một số ngẫu nhiên từ 3 đến 7
+    			var c = TaoSoNgauNhien(2, 5); //Trả về một số ngẫu nhiên từ 2 đến 4
+		</script>
+
+		VD: Tạo một số nguyên ngẫu nhiên trong đoạn từ "min" đến "max" (bao gồm max)
+		<script>
+    			function TaoSoNgauNhien(min, max){
+        		return Math.floor(Math.random() * (max - min + 1)) + min;
+    			}
+    			var a = TaoSoNgauNhien(1, 10); //Trả về một số ngẫu nhiên từ 1 đến 10
+    			var b = TaoSoNgauNhien(3, 8); //Trả về một số ngẫu nhiên từ 3 đến 8
+    			var c = TaoSoNgauNhien(2, 5); //Trả về một số ngẫu nhiên từ 2 đến 5
+		</script>

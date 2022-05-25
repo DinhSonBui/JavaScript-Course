@@ -1,0 +1,12 @@
+* Cách ghi chú thích trong JavaScript'
+	- Chú thích là gì?
+		+ Chú thích là những đoạn mã mà khi trình duyệt gặp phải chúng thì trình duyệt sẽ bỏ qua (có nghĩa là trình duyệt sẽ không thực thi 
+		những đoạn mã đó)
+		+ Chú thích thường được dùng để ghi những lời như: nhận xét, giải thích, lưu ý, nhắc nhỡ,.... nhằm phục vụ cho việc nếu sau này có 
+		xem lại mã lệnh để nâng cấp thì cũng dễ dàng hơn.
+		+ Ngoài ra, chúng ta cũng có thể kiểm tra sự thực thi của một đoạn mã JavaScript nào đó bằng cách sử dụng việc ghi chú thích để vô 
+		hiệu hóa những đoạn mã JavaScript còn lại.
+	- Cách viết chú thích
+		+ Viết chú thích trên một dòng : Nếu phần nội dung chú thích nằm gọn trên một dòng thì bạn chỉ cần đặt cặp dấu // phía trước nó 
+		+ Viết chú thích trên nhiều dòng : Nếu phần nội dung chú thích trải dài trên nhiều dòng thì ta dùng cặp dấu /* */ để bao quanh chúng.
+		+ Ngoài ra, cặp dấu /* */ cũng có thể dùng để chú thích cho phần nội dung nằm gọn trên một dòng.

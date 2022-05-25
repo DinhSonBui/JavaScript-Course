@@ -1,0 +1,28 @@
+* Các KIỂU DỮ LIỆU trong JavaScript
+	- Trong JavaScript, các kiểu dữ liệu được chia thành những loại cơ bản như sau: string, number, boolean, object, undefined, array (đây là một 		trường hợp đặc biệt của kiểu dữ liệu object)
+	-  Dữ liệu kiểu string :  các dữ liệu thuộc kiểu string (hay còn được gọi là "chuỗi") là một tập hợp gồm các ký tự, chúng được viết bên trong 	cặp dấu nháy kép hoặc cặp dấu nháy đơn.
+	- Dữ liệu kiểu number: Trong JavaScript, các dữ liệu thuộc kiểu number (hay còn được gọi là "số") là một tập hợp của các con số (0 - 9) không 	chứa dấu khoảng trắng và có thể chứa dấu trừ (-) nằm ở đầu để đại diện cho số âm.
+	- Dữ liệu kiểu boolean
+		+ Trong JavaScript, các dữ liệu thuộc kiểu boolean chỉ có thể nhận một trong hai giá trị, đó là: true (đúng) , false (sai)
+		+ Có hai cách để nhận giá trị kiểu boolean, đó là:
+			Gán giá trị trực tiếp.
+			Nhận được từ một điều kiện.
+	- Dữ liệu kiểu object : Trong JavaScript, các dữ liệu thuộc kiểu object (hay còn được gọi là "đối tượng") là một tập hợp gồm những thuộc tính 	và mỗi thuộc tính sẽ chứa đựng một giá trị dữ liệu.
+	- Dữ liệu kiểu undefined : Trong JavaScript, khi một biến được khai báo mà không gán giá trị thì biến đó sẽ có giá trị là undefined và kiểu dữ 	liệu cũng là undefined.
+	- Dữ liệu kiểu array : Trong JavaScript, array còn được gọi là mảng, nó là một trường hợp đặc biệt của đối tượng. (Thật ra, mảng có kiểu dữ 		liệu là object) . Mảng là một loại biến đặc biệt có thể lưu trữ nhiều giá trị đồng thời, mỗi giá trị được gọi là một phần tử mảng.
+	- Để xác định kiểu của một dữ liệu nào đó thì ta sử dụng toán tử typeof : 
+		VD :<script>
+    			var a = typeof ""; //string
+    			var b = typeof "Lập Trình Web"; //string
+    			var c = typeof 1993; //number
+    			var d = typeof true; //boolean
+    			var e = typeof false; //boolean
+    			var f = typeof {name:"Nhân", gender:"Nam", year:1993}; //object
+    			var g = typeof undefined; //undefined
+    			var h = typeof ["HTC","Nokia","SamSung"]; //object
+		   </script>
+	- Ta cũng có thể kiểm tra kiểu dữ liệu của một biến.
+		<script>
+    			var year = 1993;
+    			var a = typeof year; //number
+		</script>

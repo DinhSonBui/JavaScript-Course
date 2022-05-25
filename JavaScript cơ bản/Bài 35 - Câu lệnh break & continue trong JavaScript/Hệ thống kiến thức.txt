@@ -1,0 +1,10 @@
+*  Câu lệnh break & continue trong JavaScript
+	- Câu lệnh break trong JavaScript
+		+ Lệnh break thường được đặt vào bên trong các vòng lặp như: for, while, do while
+		+ Khi lệnh break được thực thi, vòng lặp sẽ kết thúc mặc cho điều kiện của vòng lặp có còn đúng hay không.
+		+ Hay nói cách khác là "lệnh break được dùng để thoát khỏi vòng lặp trước khi vòng lặp kết thúc"
+		+ Lệnh break cũng dùng để ngăn chặn việc thực thi những câu lệnh nằm sau trường hợp so sánh trùng khớp trong lệnh switch case
+		+ Ngoài ra, lệnh break còn được dùng để thoát khỏi một khối lệnh. Tuy nhiên, khối lệnh đó phải được gắn một nhản, và khi dùng lệnh 		break thì phải gọi kèm theo nhản của khối lệnh đó.
+	- Câu lệnh continue trong JavaScript
+		+ Lệnh continue thường được đặt vào bên trong các vòng lặp như: for, while, do while
+		+ Khi lệnh continue được thực thi, những câu lệnh còn lại của lần lặp hiện tại sẽ bị bỏ qua.

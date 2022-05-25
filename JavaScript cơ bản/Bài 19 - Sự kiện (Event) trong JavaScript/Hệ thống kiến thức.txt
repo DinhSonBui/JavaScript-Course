@@ -1,0 +1,26 @@
+* Cách bắt sự kiện (Event) trong JavaScript	
+	- Sự kiện là gì !?
+		+ Thông thường, sự kiện là những hành động của người dùng khi tương tác lên phần tử HTML.
+	- Các sự kiện trong JavaScript
+		+ Trong JavaScript, mỗi sự kiện sẽ tương ứng với một cái tên.
+
+         	+ Dưới đây là danh sách một vài sự kiện phổ biến mà ta thường dùng trong JavaScript.
+			Tên sự kiện	Mô tả
+			onclick		Sự kiện xảy ra khi người dùng click chuột vào phần tử
+			ondblclick	Sự kiện xảy ra khi người dùng click kép chuột vào phần tử
+			onmouseenter	Sự kiện xảy ra khi người dùng di chuyển con trỏ vào phần tử
+			onmouseleave	Sự kiện xảy ra khi người dùng di chuyển con trỏ ra khỏi phần tử.
+			onkeydown	Sự kiện xảy ra khi người dùng đang nhấn một phím
+			onkeyup		Sự kiện xảy ra khi người dùng nhả phím ra
+			oncopy		Sự kiện xảy ra khi người dùng sao chép nội dung của phần tử
+			oncut		Sự kiện xảy ra khi người dùng cắt nội dung của phần tử
+			npaste		Sự kiện xảy ra khi người dùng dán nội dung vào phần tử
+			nchange		Sự kiện xảy ra khi người dùng thay đổi giá trị của phần tử
+	- Bắt sự kiện là gì !?
+		+ "Bắt sự kiện" là khi một sự kiện nào đó xảy ra thì ta muốn JavaScript phản ứng lại với sự kiện đó bằng việc thực thi một đoạn mã xác 		định.
+	- Cách bắt sự kiện trong JavaScript
+		+ Trước khi bắt sự kiện thì ta cần phải xác định rõ ba thành phần:
+			(1) Phần tử dùng để xảy ra sự kiện.
+			(2) Sự kiện sẽ xảy ra.
+			(3) Đoạn mã sẽ được thực thi khi sự kiện xảy ra.
+		+ Dưới đây là cú pháp dùng để bắt sự kiện: <Tên-phần-tử Tên-sự-kiện="đoạn mã sẽ được thực thi khi sự kiện xảy ra">

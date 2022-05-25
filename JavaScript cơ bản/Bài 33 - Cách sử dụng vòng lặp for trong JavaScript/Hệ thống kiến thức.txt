@@ -1,0 +1,20 @@
+* Cách sử dụng vòng lặp for trong JavaScript
+	Cách sử dụng vòng lặp for in trong JavaScript
+		+Vòng lặp for in dùng để lặp qua một lần các thuộc tính của một đối tượng.
+
+Ví dụ:
+<script>
+
+    var SinhVien = {
+        name:"Nguyễn Thành Nhân",
+        year:1993,
+        gender:"Nam",
+        hometown:"Cần Thơ"
+    }
+
+    for(x in SinhVien){
+        document.write(SinhVien[x]);
+        document.write("<hr>");
+    }
+
+</script>

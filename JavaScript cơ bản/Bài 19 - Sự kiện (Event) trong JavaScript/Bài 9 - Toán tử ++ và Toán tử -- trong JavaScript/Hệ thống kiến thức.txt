@@ -1,0 +1,11 @@
+* Toán tử ++ và Toán tử -- trong JavaScript
+	- Toán tử ++
+		+ Toán tử ++ được dùng để tăng giá trị của biến lên một đơn vị.
+		+ Toán tử ++ được chia làm hai loại:
+			Tiền tố (khi toán tử ++ đặt trước biến), ví dụ: ++a
+			Hậu tố (khi toán tử ++ đặt sau biến), ví dụ: a++
+	-  Toán tử --
+		+ Toán tử -- được dùng để giảm giá trị của biến xuống một đơn vị.
+		+  Toán tử -- được chia làm hai loại:
+			Tiền tố (khi toán tử -- đặt trước biến), ví dụ: --a
+			Hậu tố (khi toán tử -- đặt sau biến), ví dụ: a--

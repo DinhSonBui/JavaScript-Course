@@ -1,0 +1,28 @@
+* Cách sử dụng chuỗi (String) trong JavaScript
+	- Cách viết một chuỗi
+		+ Trong JavaScript, chuỗi phải được đặt bên trong cặp dấu nháy kép " " hoặc cặp dấu nháy đơn ' '
+		+ Hai dấu dùng để đặt xung quanh chuỗi phải cùng một loại, nếu khác loại sẽ dẫn đến sai cú pháp làm chương trình bị lỗi.
+		+  Nếu chuỗi được đặt bên trong cặp dấu nháy kép thì chuỗi không được chứa ký tự là dấu nháy kép (tuy nhiên chuỗi được chứa ký tự là 		dấu nháy đơn).
+		+ Tương tự, nếu chuỗi được đặt bên trong cặp dấu nháy đơn thì chuỗi không được chứa ký tự là dấu nháy đơn (tuy nhiên chuỗi được chứa 		ký tự là dấu nháy kép).
+	- Cách nối các chuỗi lại với nhau
+		+ Ta có thể nối hai hoặc nhiều chuỗi lại với nhau thành một chuỗi bằng cách sử dụng toán tử +
+		+ Nếu giá trị của biến là một chuỗi thì biến đó cũng có thể sử dụng trong việc nối chuỗi.
+	- Cách ngắt ký tự xuống dòng
+		+ Đôi khi viết mã lệnh mà một chuỗi quá dài sẽ dẫn đến việc khó quan sát. Để khắc phục vấn đề này, ta có thể ngắt ký tự trong chuỗi 		xuống dòng bớt bằng cách đặt dấu gạch chéo ngược \ ở chỗ muốn ngắt xuống dòng.
+		+ Nếu là trường hợp nối chuỗi thì không cần dùng đến dấu gạch chéo ngược.
+	-  Các ký tự đặc biệt
+		+ Ký tự đặc biệt là những ký tự mà khi nó được viết vào bên trong một chuỗi sẽ có nguy cơ làm ảnh hưởng đến cú pháp của chuỗi, khiến 		câu lệnh bị lỗi.
+		+ Chúng ta có một giải pháp để có thể viết được ký tự đặc biệt trong chuỗi, đó chính là đặt dấu gạch chéo ngược phía trước ký tự đặc 		biệt.
+		+ Dưới đây là ba ký tự đặc biệt thường được sử dụng nhất trong chuỗi:
+		Ký tự đặc biệt	Cách viết trong chuỗi
+		"	\"
+		'	\'
+		\	\\
+	- Đếm số lượng ký tự trong chuỗi
+		+ Chúng ta có thể xác định được số lượng ký tự trong một chuỗi bằng cách truy cập vào thuộc tính length của chuỗi đó.
+		+ VD
+			<script>
+    				var a = "Tai lieu hoc JavaScript";
+    				var num1 = a.length; //23 ký tự
+    				var num2 = "HTML".length; //4 ký tự
+			</script>

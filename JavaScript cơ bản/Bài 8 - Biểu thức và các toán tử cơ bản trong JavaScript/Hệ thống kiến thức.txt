@@ -1,0 +1,11 @@
+* Biểu thức và các toán tử cơ bản trong JavaScript
+	-  Biểu thức trong JavaScript
+		+ Tương tự như trong toán học, biểu thức trong JavaScript cũng là một tập hợp gồm các toán hạng và các toán tử.
+		+ Điểm khác nhau giữa toán hạng trong JavaScript và toán hạng trong toán học chính là toán hạng trong JavaScript thì không nhất thiết 		phải là một chữ số, nó có thể là một giá trị hoặc một biến.
+		+ Các toán tử trong JavaScript có chức năng giống với toán tử trong toán học.
+		+ Phép cộng trong JavaScript tương đối khác so với phép cộng trong toán học. Trong JavaScript:
+			Số có thể cộng số => cho ra số.
+			Số có thể cộng chuỗi (hoặc chuỗi có thể cộng số) => cho ra chuỗi.
+			Chuỗi có thể cộng chuỗi => cho ra chuỗi.
+		+ Độ ưu tiên của các toán tử 
+		+ Khoảng trắng giữa các toán hạng và toán tử : không quan trọng

@@ -1,0 +1,38 @@
+* Các phương thức xử lý ngày tháng trong JavaScript
+	- Đối tượng ngày tháng là một tập hợp các thông tin về thời gian (thứ, ngày, tháng, năm, giờ, phút, giây, mili giây, múi giờ) của một thời 	điểm nào đó.
+	- Các phương thức xử lý ngày tháng trong JavaScript giúp chúng ta có thể làm một số công việc với đối tượng ngày tháng như:
+		+ Lấy các thông tin về thời gian của đối tượng ngày tháng: ngày, tháng, năm, giờ, phút, giây, ....
+		+ Thiết lập lại các thông tin về thời gian của đối tượng ngày tháng
+	- Dưới đây là danh sách các phương thức dùng để lấy thông tin về thời gian của đối tượng ngày tháng theo giờ địa phương:
+
+		Phương thức	Mô tả
+		getDay()	Trả về ngày trong tuần (Thứ) của đối tượng ngày tháng (có giá trị từ 0 - 6)
+		getDate()	Trả về ngày trong tháng của đối tượng ngày tháng (có giá trị từ 1 - 31)
+		getMonth()	Trả về tháng của đối tượng ngày tháng (có giá trị từ 0 - 11)
+		getFullYear()	Trả về năm của đối tượng ngày tháng (có giá trị từ 1000 - 9999)
+		getHours()	Trả về giờ của đối tượng ngày tháng (có giá trị từ 0 - 23)
+		getMinutes()	Trả về phút của đối tượng ngày tháng (có giá trị từ 0 - 59)
+		getSeconds()	Trả về giây của đối tượng ngày tháng (có giá trị từ 0 - 59)
+		getMilliseconds()	Trả về mili giây của đối tượng ngày tháng (có giá trị từ 0 - 999)
+		getTime()	Trả về tổng số mili giây từ thời điểm 01/01/1970 00:00:00 đến thời điểm của đối tượng ngày tháng (tính theo giờ tiêu 				chuẩn UTC)
+	- Dưới đây là danh sách các phương thức dùng để thiết lập lại thông tin về thời gian của đối tượng ngày tháng theo giờ địa phương:
+
+		Phương thức	Mô tả
+		setDate()	Thiết lập lại ngày trong tháng của đối tượng ngày tháng
+		setMonth()	Thiết lập lại tháng của đối tượng ngày tháng
+		setFullYear()	Thiết lập lại năm của đối tượng ngày tháng
+		setHours()	Thiết lập lại giờ của đối tượng ngày tháng
+		setMinutes()	Thiết lập lại phút của đối tượng ngày tháng
+		setSeconds()	Thiết lập lại giây của đối tượng ngày tháng
+		setMilliseconds()	Thiết lập lại mili giây của đối tượng ngày tháng
+
+	VD 
+		<script>
+    			var date = new Date();
+    			var result = date.getDay(); 
+		</script>
+	VD
+		<script>
+    			var date = new Date();
+    			var result = date.getTime();
+		</script>

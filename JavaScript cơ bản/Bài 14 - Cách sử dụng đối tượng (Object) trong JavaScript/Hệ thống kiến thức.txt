@@ -1,0 +1,29 @@
+* Cách sử dụng đối tượng (Object) trong JavaScript
+	- Đối tượng (trong JavaScript) là gì !? 
+		+ Tương tự như đối tượng trong đời sống thực, đối tượng trong JavaScript cũng dùng để lưu trữ về một thứ gì đó cụ thể, nó có các thông 		tin và hành động giống như đối tượng trong đời trong thực. Tuy nhiên, trong JavaScript thì các thông tin được gọi là thuộc tính, còn 		các hành động thì được gọi là phương thức.
+	- Cách khai báo (khởi tạo) một đối tượng trong JavaScript
+		+ Một đối tượng có thể có "không hoặc nhiều thuộc tính" và "không hoặc nhiều phương thức".
+		+ Để khai báo một đối tượng, ta sử dụng cú pháp như sau:
+		var tên đối tượng = {
+			tên thuộc tính thứ nhất:giá trị,
+			tên thuộc tính thứ hai:giá trị,
+			tên thuộc tính thứ ba:giá trị,
+
+          		tên phương thức thứ nhất:function(){
+              		//Danh sách các câu lệnh của phương thức này
+          		},
+			tên phương thức thứ hai:function(){
+              		//Danh sách các câu lệnh của phương thức này
+          		},
+			tên phương thức thứ ba:function(){
+             	 	//Danh sách các câu lệnh của phương thức này
+          		}
+		}
+	- Cách truy cập vào "thuộc tính" của đối tượng
+		+ Việc truy cập vào thuộc tính của đối tượng sẽ trả về giá trị của thuộc tính đó.
+		+ Để truy cập vào thuộc tính của đối tượng, ta sử dụng cú pháp như sau: tên đối tượng.tên thuộc tính
+	- Cách truy cập vào "phương thức" của đối tượng
+		+ Việc truy cập vào phương thức của đối tượng sẽ giúp các câu lệnh trong phương thức được thực thi.
+		+ Để truy cập vào phương thức của đối tượng, ta sử dụng cú pháp như sau: tên đối tượng.tên phương thức()
+		+ Lưu ý: Nếu các câu lệnh trong phương thức trả về một giá trị thì ta có thể truy cập vào phương thức đó để sử dụng nó như một giá
+		trị.

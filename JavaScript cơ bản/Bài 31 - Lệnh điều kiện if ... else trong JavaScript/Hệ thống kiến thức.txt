@@ -1,0 +1,27 @@
+* Lệnh điều kiện if ... else trong JavaScript
+	-  Lệnh điều kiện if trong JavaScript
+		+ Lệnh if dùng để kiểm tra một điều kiện, nếu điều kiện đó là đúng thì một đoạn mã xác định sẽ được thực thi.
+		+ Cú pháp:
+		if(điều kiện){
+    			//đoạn mã này sẽ được thực thi nếu điều kiện là đúng
+		}
+	- Lệnh điều kiện if ... else trong JavaScript
+		+ Lệnh if ... else dùng để kiểm tra một điều kiện, nếu điều kiện đó là đúng thì một đoạn mã xác định sẽ được thực thi, còn nếu điều 		kiện đó sai thì một đoạn mã xác định khác sẽ được thực thi.
+		+ Cú pháp:
+			if(điều kiện){
+    				//đoạn mã này sẽ được thực thi nếu điều kiện là đúng
+			}else{
+    				//đoạn mã này sẽ được thực thi nếu điều kiện là sai
+			}
+	-  Lệnh điều kiện if ... else if ... else trong JavaScript
+		+ Lệnh if ... else if ... else là một dạng nâng cao của lệnh if ... else
+		+ Lệnh if ... else if ... else dùng để mở rộng phạm vi kiểm tra các điều kiện khác nếu tất cả những điều kiện phía trên là sai.
+		+ Cú pháp:
+			if(điều kiện 1){
+    				//đoạn mã này sẽ được thực thi nếu điều kiện 1 là đúng
+			else if(điều kiện 2){
+    				//đoạn mã này sẽ được thực thi nếu điều kiện 1 sai và điều kiện 2 là đúng
+			}else{
+   				//đoạn mã này sẽ được thực thi nếu tất cả những điều kiện trên là sai
+			}	
+		+ Lưu ý: Đối với lệnh if ... else if ... else thì không giới hạn số lượng điều kiện.

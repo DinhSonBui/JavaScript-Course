@@ -1,0 +1,34 @@
+* Các phương thức xử lý số trong JavaScript
+	- Trong JavaScript, các số nguyên thủy (ví dụ như: 5, 13, -6, 0, ....) không phải là đối tượng, tuy nhiên chúng vẫn có một số phương thức, với 	việc truy cập vào các phương thức đó, ta có thể làm được một số công việc với các con số, ví dụ như: làm tròn số, chuyển số về dạng chuỗi,....
+	- Dưới đây là ba phương thức chính thường được dùng để xử lý số trong JavaScript:
+		Phương thức	Mô tả chức năng
+		toString()	Chuyển một giá trị về dạng chuỗi ký tự
+		toExponential()	Trả về chuỗi biểu thức mũ của một số
+		toFixed()	Làm tròn một số đến phần thập phân xác định
+	- Ngoài ra, trong JavaScript có thêm ba phương thức toàn cầu dùng để xử lý số:
+		Phương thức	Mô tả chức năng
+		Number()	Phân tích một giá trị để trả về một số tương ứng
+		parseInt()	Phân tích một chuỗi để trả về một số nguyên tương ứng
+		parseFloat()	Phân tích một chuỗi để trả về một số thực tương ứng
+	- Phương thức toString()
+		+ Phương thức toString() dùng để chuyển một giá trị về dạng chuỗi ký tự.
+		+ Ta có thể thêm một đối số tùy chọn cho phương thức toString() để xác định giá trị trả về, ví dụ:
+			Nếu đối số là 2 thì giá trị ban đầu sẽ được trả về chuỗi giá trị nhị phân.
+			Nếu đối số là 8 thì giá trị ban đầu sẽ được trả về chuỗi giá trị bát phân.
+			Nếu đối số là 16 thì giá trị ban đầu sẽ được trả về chuỗi giá trị thập lục phân.
+	- Phương thức toExponential()
+		+ Phương thức toExponential() dùng để trả về chuỗi biểu thức mũ của một số.
+		+ Ta có thể thêm một đối số tùy chọn cho phương thức toExponential() để xác định số lượng ký tự phần thập phân của biểu thức mũ.
+	- Phương thức toFixed()
+		+ Phương thức toFixed() dùng để làm tròn một số đến phần thập phân xác định.
+	- Phương thức Number()
+		+ Phương thức Number() dùng để phân tích một giá trị để trả về một số tương ứng với giá trị đó.
+		+ Lưu ý:
+			Nếu giá trị là một đối tượng ngày tháng thì phương thức Number() sẽ trả về tổng số mili giây từ 1/1/1970 đến thời điểm của đối 			tượng ngày tháng đó.
+			Nếu không thể phân tích giá trị ra số tương ứng thì phương thức Number() sẽ trả về NaN.
+	-  Phương thức parseInt()
+		+ Phương thức parseInt() dùng để phân tích một chuỗi để trả về một số nguyên tương ứng.
+		+ Lưu ý: Nếu không thể phân tích chuỗi ra số nguyên thì phương thức parseInt() sẽ trả về NaN.
+	-  Phương thức parseFloat()
+		+ Phương thức parseFloat() dùng để phân tích một chuỗi để trả về một số thực tương ứng.
+		+ Lưu ý: Nếu không thể phân tích chuỗi ra số thực thì phương thức parseFloat() sẽ trả về NaN.

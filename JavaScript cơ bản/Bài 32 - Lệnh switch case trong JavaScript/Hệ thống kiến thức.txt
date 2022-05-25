@@ -1,0 +1,52 @@
+* Lệnh switch case trong JavaScript
+	- Khái niệm lệnh "switch case" trong JavaScript
+		+ Lệnh switch case dùng để xác định một danh sách các trường hợp và trong mỗi trường hợp sẽ có một đoạn mã, khi giá trị của bạn trùng 		khớp với trường hợp nào thì đoạn mã của trường hợp đó sẽ được thực thi.
+	- Cách sử dụng lệnh "switch case" trong JavaScript
+		+ Trong JavaScript, lệnh switch case được sử dụng với cú pháp như sau:
+		switch (giá trị){
+    			case trường hợp 1:
+        			//đoạn mã này sẽ được thực thi khi giá trị trùng khớp với trường hợp 1
+        			break;
+    			case trường hợp 2:
+       	 			//đoạn mã này sẽ được thực thi khi giá trị trùng khớp với trường hợp 2
+        			break;
+    			case trường hợp 3:
+        			//đoạn mã này sẽ được thực thi khi giá trị trùng khớp với trường hợp 3
+        			break;
+    			...
+    			...
+    			...
+    			default:
+        			//đoạn mã này sẽ được thực thi khi giá trị KHÔNG trùng khớp trường hợp nào cả
+        			break;
+		}
+	- Nhóm các trường hợp lại với nhau
+		+ Nếu trong danh sách các trường hợp của lệnh switch case có những trường hợp mà bạn muốn cùng thực thi một đoạn mã thì ta hãy nhóm 		các trường hợp đó lại với nhau.
+	<script>
+        	var month = 5;
+        	switch (month){
+            	case 1:
+            	case 2:
+            	case 3:
+                	document.write("Mùa Xuân");
+                	break;
+            	case 4:
+            	case 5:
+            	case 6:
+                	document.write("Mùa Hạ");
+                	break;
+            	case 7:
+            	case 8:
+            	case 9:
+                	document.write("Mùa Thu");
+                	break;
+            	case 10:
+            	case 11:
+            	case 12:
+                	document.write("Mùa Đông");
+                	break;
+        }
+    	</script>
+	
+	- Lệnh "switch case lồng nhau"
+	+ Thật ra, lệnh switch case lồng nhau chỉ là cách sử dụng nâng cao của lệnh switch case thông thường, nó giúp ta mở rộng phạm vi xét duyệt các 	trường hợp. Từ đó, chọn được đoạn mã thích hợp nhất để thực thi.

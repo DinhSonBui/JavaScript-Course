@@ -1,0 +1,19 @@
+* Nguyên lý thực thi mã lệnh trong JavaScript
+	 Trước tiên, để tiện cho việc xưng hô thì tất cả những câu lệnh trong cặp thẻ <script></script> hoặc những câu lệnh trong tập tin JavaScript,
+	  ta tạm gọi chúng là "kịch bản".
+ 	
+	-  Thứ tự thực thi của các câu lệnh trong kịch bản: 
+		+ Trong một kịch bản, các câu lệnh JavaScript được thực thi lần lượt theo thứ tự từ trên xuống dưới .
+		+ Có những kịch bản mà trong đó câu lệnh bên dưới phải cần đến dữ liệu từ câu lệnh ở trên. Vì vậy, việc xác định thứ tự của các câu 
+		lệnh là vô cùng quan trọng
+	- Thứ tự thực thi của các kịch bản trong trang web:\
+		+  Trong một trang web, các kịch bản được thực thi lần lượt theo thứ tự từ trên xuống dưới.
+		+ Các kịch bản được viết tách biệt nhau, đó là do cách trình bày của người lập trình viên. Tuy nhiên, về mặt ý nghĩa thì chúng cũng
+		 giống như một kịch bản. Các câu lệnh của kịch bản phía trên sẽ cung cấp dữ liệu cho các câu lệnh của kịch bản phía dưới.
+		+ Thứ tự thực thi của các tập tin JavaScript được nhúng vào trang web cũng giống các đoạn <script>
+	-  Mối liên hệ giữa HTML và mã lệnh JavaScript	
+		+ Không riêng gì thứ tự thực thi giữa các câu lệnh JavaScript mới quan trọng, thứ tự thực thi giữa HTML và JavaScript cũng quan trọng 		không kém.
+		+ Có một cách để đề phòng trường hợp người lập trình viên sơ ý sắp xếp sai thứ tự của mã HTML và JavaScript dẫn đến tình trạng phần tử 		HTML không tồn tại khiến câu lệnh JavaScript thực thi bị lỗi, đó chính là đặt các kịch bản JavaScript nằm ở vị trí cuối cùng trong 		phần tử <body>, bởi vì khi đó các mã HTML được thực thi trước đảm bảo phần tử HTML tồn tại trước khi mã lệnh JavaScript được thực thi. 		Ngoài ra nó còn giúp cải thiện tốc độ tải giao diện của trang web (vì mã HTML được thực thi trước)
+
+
+

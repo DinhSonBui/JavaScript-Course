@@ -1,0 +1,19 @@
+* Cách hiển thị dữ liệu ra màn hình trong JavaScript
+	- alert() : Khi sử dụng alert(), nội dung mà bạn muốn hiển thị sẽ được hiển thị bên trong một hộp thoại thông báo 
+	- document.write() : + Khi sử dụng document.write(),nội dung mà bạn muốn hiển thị sẽ được hiển thị ngay đúng vị trí mà nó được đặt trong 
+			       trang web.
+			     + Nếu sau khi trang web đã được tải xong mà ta lại sử dụng đến document.write() thì tất cả nội dung nằm bên trong phần
+			       tử <body> sẽ bị thay thế bởi nội dung mà bạn muốn hiển thị.
+	- document.getElementById().innerHTML : + Khi sử dụng document.getElementById().innerHTML, nội dung mà bạn muốn hiển thị sẽ được hiển thị 
+						  bên trong một phần tử xác định.
+						+ Lưu ý: Sau khi sử dụng document.getElementById().innerHTML, nội dung mà bạn muốn hiển thị sẽ thay
+						  thế tất cả nội dung ban đầu của phần tử.
+       	- Một vài vấn đề trong việc viết nội dung muốn hiển thị
+		+ Nếu nội dung mà bạn muốn hiển thị là một chuỗi ký tự, thì chuỗi ký tự đó phải được đặt bên trong cặp dấu nháy kép hoặc cặp dấu nháy
+     		 đơn.
+		+ Nếu nội dung mà bạn muốn hiển thị là một số, thì số đó có thể đặt (hoặc không đặt) bên trong cặp dấu nháy kép hoặc cặp dấu nháy đơn.
+		+ Nếu chuỗi ký tự được đặt bên trong cặp dấu nháy kép thì chuỗi đó không được chứa ký tự là dấu nháy kép (tuy nhiên nó được phép chứa
+		  ký tự là dấu nháy đơn)
+		+ Nếu chuỗi ký tự được đặt bên trong cặp dấu nháy đơn thì chuỗi đó không được chứa ký tự là dấu nháy đơn (tuy nhiên nó được phép chứa 
+		  ký tự là dấu nháy kép)
+		+  Ta cũng có thể dùng chuỗi để tạo các phần tử HTML.

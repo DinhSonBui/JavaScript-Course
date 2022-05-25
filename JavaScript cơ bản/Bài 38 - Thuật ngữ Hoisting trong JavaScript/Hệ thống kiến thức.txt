@@ -1,0 +1,11 @@
+* Thuật ngữ "Hoisting" trong JavaScript
+	- Hoisting là gì !?
+		+ "Hoisting" là hành động mặc định của JavaScript, nó sẽ di chuyển những câu lệnh khai báo tên biến lên vị trí đầu tiên trong phạm vi 		(lên đầu tập tin hiện tại hoặc lên đầu hàm hiện tại)
+		+ Lưu ý: "Hoisting" chỉ di chuyển phần khai báo tên biến lên vị trí đầu tiên trong phạm vi, còn phần gán giá trị thì không được di 		chuyển lên.
+	_ Công dụng của Hoisting
+		+ Như chúng ta đã biết, nếu sử dụng một biến trong khi nó chưa được khai báo thì câu lệnh sử dụng biến đó sẽ bị lỗi.
+		+ Hoisting giúp ta tránh tình trạng bị lỗi khi sử dụng những biến chưa được khai báo.
+		+  Ngoài ra, nếu đang ở trong một hàm mà ta gán giá trị cho biến chưa được khai báo thì biến đó sẽ trở thành biến toàn cục.
+		+ Hoisting giúp ta tránh tình trạng tạo ra những biến toàn cục không mong muốn.
+
+	=> Vậy tóm lại: Để đảm bảo an toàn, tránh tình trạng bị lỗi do sử dụng những biến chưa được khai báo hoặc vô tình tạo ra biến toàn cục không 	mong muốn, ta có thể khai báo lại một lần nữa các tên biến ở cuối phạm vi (cuối tập tin hoặc cuối hàm)

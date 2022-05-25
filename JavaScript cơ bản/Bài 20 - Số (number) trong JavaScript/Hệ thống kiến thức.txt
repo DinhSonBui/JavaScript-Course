@@ -1,0 +1,38 @@
+* Số (number) trong JavaScript
+	- Một vài khái niệm về số trong JavaScript
+		+ Số không chứa dấu chấm được gọi là số nguyên
+		+ Số có chứa dấu chấm được gọi là số thực
+	- Số được viết dưới dạng biểu thức mũ
+		+ Nếu một số quá lớn hoặc quá nhỏ, ví dụ như: 5000000000 , 0.000005
+		+ Thì ta có thể viết chúng dưới dạng biểu thức mũ, ví dụ:
+			5000000000 (có giá trị tương đương với 5.109) viết sang dạng biểu thức mũ sẽ là 5e+9
+			0.000005 (có giá trị tương đương với 5.10-6) viết sang dạng biểu thức mũ sẽ là 5e-6
+			Ví dụ:
+				<script>
+    					document.write("5e+9 sẽ bằng với: " + (5e+9) + "<br>");
+    					document.write("5e-6 sẽ bằng với: " + (5e-6) + "<br>");
+    					document.write("145e+2 sẽ bằng với: " + (145e+2) + "<br>");
+    					document.write("145.55e+5 sẽ bằng với: " + (145.55e+5) + "<br>");
+    					document.write("145.55e-6 sẽ bằng với: " + (145.55e-6) + "<br>");
+				</script>
+	-  Vấn đề "độ chính xác" của một số
+		+ Trong JavaScript, một số nguyên sẽ có độ chính xác lên đến 15 chữ số.
+		+ Đối với số thực thì độ chính xác sẽ lên đến 17 chữ số.
+	-  Các phép toán trên số
+		+ Tương tự như trong đại số, chúng ta có bốn phép toán cơ bản (cộng, trừ, nhân, chia) dùng để thực hiện việc tính toán trên các con 		số.
+		+ Có một trường hợp đặc biệt, nếu trong phép toán chứa toán hạng là số nhưng lại bị đặt bên trong cặp dấu nháy kép hoặc cặp dấu nháy 			đơn, thì JavaScript sẽ cố gắng xem toán hạng đó như là một số.
+			VD <script>
+    				var a = 35 - "5"; //biến a sẽ có giá trị là 30
+    				var b = "35" * 5; //biến b sẽ có giá trị là 175
+    				var c = "35" / "5"; //biến c sẽ có giá trị là 7
+			   </script>
+		+ Lưu ý: Ở trường hợp đặc biệt trên, nếu toán tử là phép cộng thì nó sẽ bị chuyển thành dạng ghép chuỗi.
+	-  Giá trị NaN
+		+ Giá trị NaN (Not a Number) là một giá trị thuộc kiểu number, nhưng nó không phải là một số.
+		+ Giá trị NaN thường được sinh ra khi phép toán có chứa toán hạng không thuộc kiểu dữ liệu number và toán tử trong phép toán đó là 		phép trừ, phép nhân, hoặc phép chia.
+		+  Nếu thực hiện phép toán bất kỳ giữa một số nào đó với giá trị NaN thì nó sẽ cho ra giá trị NaN
+	- Giá trị Infinity và -Infinity
+		+  Giá trị Infinity và -Infinity trong JavaScript cũng tương tự như dương vô cùng và âm vô cùng trong đại số.
+			Giá trị Infinity đại diện cho số dương lớn nhất (nằm ngoài khả năng đo đếm của JavaScript)
+			Giá trị -Infinity đại diện cho số âm lớn nhất (nằm ngoài khả năng đo đếm của JavaScript)
+		+ Ngoài ra, khi chia một số cho 0 cũng trả về giá trị Infinity.

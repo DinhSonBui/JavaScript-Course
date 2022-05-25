@@ -1,0 +1,37 @@
+* Khuôn khổ trình bày mã lệnh JavaScript
+	- Vấn đề đặt tên biến
+		+ Ngày nay, tiếng Anh đã trở thành một ngôn ngữ phổ thông.
+		+ Do đó, các lập trình viên chuyên nghiệp thường sử dụng tiếng Anh để đặt tên cho biến.
+		+ Tên biến bằng tiếng Anh sẽ dễ nhìn và dễ hiểu hơn so với tên biến bằng tiếng Việt.
+		+ Đối với những tên biến được ghép bởi nhiều từ thì ký tự đầu tiên của mỗi từ nên được viết hoa (riêng ký tự đầu tiên của từ đầu tiên 		thì không cần viết hoa)
+		+ Ví dụ:
+			Thay vì viết var firstname thì ta nên viết là var firstName
+			Thay vì viết var myfirstname thì ta nên viết là var myFirstName
+	- Vấn đề khoảng cách xung quanh các toán tử
+		+ Ta nên thêm một dấu khoảng trắng xung quanh các toán tử + - * / =
+		+ - Ngoài ra, phía sau dấu phẩy cũng nên thêm một dấu khoảng trắng.
+	- Vấn đề trình bày một hàm (function)
+		+ Không nên viết liên tục hàm trên một dòng mà ta nên viết trên nhiều dòng, như thế sẽ dễ nhìn hơn:
+			Phía sau dấu ngoặc nhọn mở của hàm cần được xuống dòng.
+			Phía trước dấu ngoặc nhọn đóng của hàm cần được xuống dòng.
+			Mỗi câu lệnh bên trong hàm cần được xuống dòng.
+		+ Mỗi câu lệnh bên trong hàm nên thụt đầu dòng bốn dấu khoảng trắng.
+	- Vấn đề trình bày một mảng (array)
+		+ Phía sau dấu phẩy dùng để ngăn cách các phần tử mảng cần có một dấu khoảng trắng.
+		+ Ví dụ: var mobile = ["HTC", "Nokia", "SamSung", "LG", "Apple"];
+		+ Nếu câu lệnh khai báo mảng quá dài dẫn đến việc không thể hiển thị hết trên một dòng thì ta nên ngắt từng phần tử xuống dòng.
+	- Vấn đề trình bày một đối tượng (object)
+		+ Phía sau dấu hai chấm dùng để ngăn cách tên thuộc tính và giá trị thuộc tính, cần có một dấu khoảng trắng.
+		+ Mỗi cặp tên thuộc tính & giá trị thuộc tính nên được ngắt xuống dòng để dễ phân biệt từng thuộc tính của đối tượng.
+	- Vấn đề trình bày vòng lặp và lệnh điều kiện
+		+ Vấn đề trình bày các vòng lặp for, while, do while, .... và các lệnh điều kiện if else cũng gần tương tự như cách trình bày mảng 		hoặc đối tượng.
+		+ Ta cần quan tâm đến vấn đề thụt đầu dòng cho các câu lệnh, khoảng cách phía sau dấu phẩy và dấu chấm phẩy, ....
+	- Câu lệnh dùng để nhúng tập tin JavaScript
+		+ Đối với những bạn mới tìm hiểu về JavaScript, họ thường viết câu lệnh nhúng tập tin JavaScript với cú pháp đầy đủ như sau:
+			<script type="text/javascript" src="đường dẫn đến tập tin javascript"></script>
+		+ Tuy nhiên, phần type="text/javascript" là không cần thiết.
+		+ Do đó, ta có thể viết lại câu lệnh dùng để nhúng tập tin JavaScript vào trang web như sau:
+			<script src="đường dẫn đến tập tin javascript"></script>
+	- Vấn đề đặt tên cho tập tin
+		+ Hầu hết các máy chủ web (Apache, Unix, ....) đều có phân biệt trường hợp chữ in hoa và chữ thường đối với tên tập tin (ví dụ như 		banana.png và Banana.png là hai tập tin khác nhau)
+		+ Do đó để nhất quán, tránh tình trạng nhập sai tên tập tin thì ta nên đặt tất cả các ký tự trong tên tập tin bằng chữ thường.

@@ -1,0 +1,30 @@
+* Cách sử dụng vòng lặp while & do while
+  	- Vòng lặp while trong JavaScript	
+		+ Bạn đưa ra một điều kiện, nếu điều kiện đó là sai thì kết thúc, còn nếu đúng thì một đoạn mã sẽ được thực thi và bạn tiếp tục quay 		lại kiểm tra điều kiện, nếu điều kiện đó là sai thì kết thúc, còn nếu đúng thì một đoạn mã sẽ được thực thi và bạn tiếp tục quay lại 		kiểm tra điều kiện . . . .
+		+ Hành động đó cứ lặp đi lặp lại mãi cho đến khi bạn kiểm tra thấy điều kiện là sai thì kết thúc.
+  		==> ĐÓ CHÍNH LÀ VÒNG LẶP WHILE
+		+ Vòng lặp while dùng để lặp lại việc thực thi một đoạn mã nếu điều kiện mà ta đưa ra vẫn còn đúng.
+		+ Cú pháp:
+		while(điều kiện){
+    			//Đoạn mã mà bạn muốn thực thi
+		}
+	-  Vòng lặp do while trong JavaScript
+		+ Tương tự như vòng lặp while, vòng lặp do while dùng để lặp lại việc thực thi một đoạn mã nếu điều kiện mà ta đưa ra vẫn còn đúng.
+		+ Tuy nhiên, đối với vòng lặp do while thì ở lần đầu tiên đoạn mã sẽ được thực thi luôn mà không cần phải kiểm tra điều kiện (đó chính 		là điểm khác nhau giữa vòng lặp while và do while)		
+		+ Cú pháp:
+		do{
+    			//Đoạn mã mà bạn muốn thực thi
+		}while(điều kiện);
+	- Điểm khác nhau giữa vòng lặp while và do while
+		+ Như đã nói ở trên, điểm khac nhau duy nhất giữa vòng lặp while và do while chính là đối với vòng lặp do while thì ở lần đầu tiên, 		đoạn mã sẽ được thực thi mà không cần phải kiểm tra điều kiện (tức là cho dù điều kiện có đúng hay sai thì đoạn mã vẫn được thực thi 		ít nhất một lần)
+	- Sử dụng lệnh break và lệnh continue trong vòng lặp
+		+ Lệnh break và lệnh continue thường được đặt bên trong vòng lặp.
+			(1) Khi lệnh break được thực thi, vòng lặp sẽ kết thúc mặc cho điều kiện có còn đúng hay không.
+			(2) Khi lệnh continue được thực thi, những câu lệnh còn lại của lần lặp hiện tại sẽ bị bỏ qua.
+	- Vòng lặp lồng nhau
+		+ Tương tự như vòng lặp for, vòng lặp while (do while) cũng có thể lồng vào nhau:
+			Vòng lặp "while" lồng bên trong vòng lặp "while"
+			Vòng lặp "do while" lồng bên trong vòng lặp "do while"
+			Vòng lặp "while" lồng bên trong vòng lặp "do while"
+			Vòng lặp "do while" lồng bên trong vòng lặp "while"
+	- Lặp qua một lần các phần tử của mảng

@@ -1,0 +1,84 @@
+* Sắp xếp thứ tự các phần tử mảng trong JavaScript
+	- Sắp xếp theo thứ tự tăng dần trong từ điển
+		+ Phương thức sort() được dùng để sắp xếp lại thứ tự của các phần tử mảng theo chiều tăng dần trong từ điển (abc).
+		+ Lưu ý: Phương thức sort() sẽ làm thay đổi giá trị của mảng ban đầu.
+	- Đảo ngược thứ tự của các phần tử trong mảng
+		+ Phương thức reverse() được dùng để đảo ngược thứ tự của các phần tử trong mảng
+		+ Lưu ý: Phương thức reverse() sẽ làm thay đổi giá trị của mảng ban đầu.
+	- Sắp xếp thứ tự các phần tử mảng có giá trị thuộc kiểu số
+		+ Như chúng ta đã biết, phương thức sort() được dùng để sắp xếp lại thứ tự của các phần tử mảng theo chiều tăng dần trong từ điển.
+		+ Tuy nhiên, nó chỉ làm việc tốt với phần tử có giá trị thuộc kiểu chuỗi, còn đối với phần tử có giá trị thuộc kiểu số thì nó sẽ làm 		việc không chính xác.
+		+ Do đó, nếu dùng phương thức sort() để sắp xếp thứ tự của các phần tử mảng có giá trị thuộc kiểu số thì ta phải sử dụng kết hợp với 		một "hàm so sánh"
+			Ví dụ: Sắp xếp thứ tự của các phần tử trong mảng score theo chiều giá trị tăng dần.
+			<script>
+    				var score = [40, 100, 1, 6, 35, 10];
+    				score.sort(function(a, b){return a - b});
+			</script>
+			Ví dụ:Sắp xếp thứ tự của các phần tử trong mảng score theo chiều giá trị giảm dần.
+			<script>
+    				var score = [40, 100, 1, 6, 35, 10];
+    				score.sort(function(a, b){return b - a});
+			</script>
+			Ví dụ:Sắp xếp ngẫu nhiên thứ tự của các phần tử trong mảng score
+			<script>
+    				var score = [40, 100, 1, 6, 35, 10];
+    				score.sort(function(){return 0.5 - Math.random()});
+			</script>
+		+ Lưu ý: Sau khi sắp xếp lại thứ tự của các phần tử mảng theo chiều tăng dần của giá trị, ta có thể xác định được phần tử có giá trị 		lớn nhất và nhỏ nhất trong mảng (phần tử đầu tiên sẽ có giá trị nhỏ nhất, phần tử cuối cùng sẽ có giá trị lớn nhất)
+		Ví dụ:
+			<script>
+    				var score = [40, 100, 1, 6, 35, 10];
+    				score.sort(function(a, b){return a - b});
+    				var min = score[0]; //biến min sẽ lưu trữ giá trị là 1
+    				var max = score[score.length - 1]; //biến max sẽ lưu trữ giá trị là 100
+			</script>
+	- Tìm giá trị lớn nhất (hoặc nhỏ nhất) trong mảng
+		+ Ta sẽ được biết thêm hai cách tìm giá trị lớn nhất và nhỏ nhất trong mảng bằng việc sử dụng đối tượng Math và hàm tự thiết kế.
+		+ Tìm giá trị lớn nhất (hoặc nhỏ nhất) trong mảng bằng đối tượng Math
+		Ví dụ: Tìm giá trị lớn nhất trong mảng score
+		<script>
+    			var score = [40, 100, 1, 6, 35, 10];
+    			function GiaTriLonNhat(arr) {
+        		return Math.max.apply(null, arr);
+    			}
+    			var max = GiaTriLonNhat(score); //biến max sẽ có giá trị là 100
+		</script>
+
+		Ví dụ:Tìm giá trị nhỏ nhất trong mảng score
+		<script>
+    			var score = [40, 100, 1, 6, 35, 10];
+    			function GiaTriNhoNhat(arr) {
+        			return Math.min.apply(null, arr);
+    			}
+    			var min = GiaTriNhoNhat(score); //biến min sẽ có giá trị là 1
+		</script>
+
+		+ Tìm giá trị lớn nhất (hoặc nhỏ nhất) trong mảng bằng hàm tự thiết kế
+		Ví dụ: Tìm giá trị lớn nhất trong mảng score	
+		<script>
+    			var score = [40, 100, 1, 6, 35, 10];
+    			function GiaTriLonNhat(arr) {
+         			var len = arr.length
+         			var max = -Infinity;
+          			while (len--) {
+               				if (arr[len] > max) {
+               					 max = arr[len];
+            				}
+        			}
+        			return max;
+    			}
+    			var max = GiaTriLonNhat(score); //Biến max sẽ có giá trị là 100
+		</script>
+
+	- Sắp xếp thứ tự các phần tử mảng là đối tượng
+		+ Như chúng ta đã biết, giá trị của các phần tử mảng có thể là: chuỗi, số, biến, mảng, ....
+		+ Tuy nhiên, giá trị của các phần tử mảng cũng có thể là một đối tượng.
+		Ví dụ: Sắp xếp lại thứ tự các phần tử trong mảng student (theo chiều tăng dần của tuổi sinh viên)
+		<script>
+    			var student = [
+        			{name:"Chung", age:17},
+        			{name:"Anh", age:18},
+        			{name:"Bao", age:15}
+    			];
+    			student.sort(function(a, b){return a.age - b.age});
+		/script>

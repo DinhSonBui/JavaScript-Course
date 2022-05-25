@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<!--Sử dụng alert() để hiển thị thông báo -->
+	<script>
+		alert("Chào mừng bạn đến với trang web của chúng tôi");
+	</script>
+	<!--Sử dụng document.write() để hiển thị lên trang web -->
+	<h1>Hải Phòng</h1>
+	<script>
+		document.write("<h1>Hải Phòng quê hương tôi</h1>");
+	</script>
+	<h1>Hải Phong thành phố cảng</h1>
+	<script>
+		document.write("<h1>Hải Phòng thành phố hoa phượng đỏ</h1>");
+	</script>
+	<script>
+		document.write("<h1>Hải Phòng thành phố của những cây cầu</h1>");
+	</script>
+	<button style="button" onClick="document.write('Hello')">Click here</button>
+	<!--Sử dụng document.getElementById().innerHTML -->
+	<h1>Việt Nam</h1>
+	<h1 id="VN"></h1>
+	<h1>Hải Phòng</h1>
+	<h1 id="HP"></h1>
+	<h1>Hà Nội</h1>
+	<p id="HN">Là một tỉnh</p>
+	<script>
+		document.getElementById("VN").innerHTML="Là một quốc gia";
+		document.getElementById("HP").innerHTML="Là một thành phố";
+		document.getElementById("HN").innerHTML="Là thủ đô";
+	</script>
+	<!-- Một vài vấn đề trong việc viết nội dung muốn hiển thị
+	<p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+	<p id="demo6"></p>
+	<p id="demo7"></p>
+	<p id="demo8"></p>
+
+    <script>
+		document.getElementById("demo1").innerHTML = "Lập Trình Web"; //ĐÚNG
+    	document.getElementById("demo2").innerHTML = 'Lập Trình Web'; //ĐÚNG
+    	document.getElementById("demo3").innerHTML = "1993"; //ĐÚNG
+    	document.getElementById("demo4").innerHTML = '1993'; //ĐÚNG
+    	document.getElementById("demo5").innerHTML = 1993; //ĐÚNG
+    	document.getElementById("demo6").innerHTML = "Lập Trình Web'; //SAI
+    	document.getElementById("demo7").innerHTML = 'Lập Trình Web"; //SAI
+    	document.getElementById("demo8").innerHTML = Lập Trình Web; //SAI
+	</script>
+     -->
+	
+</body>
+</html>

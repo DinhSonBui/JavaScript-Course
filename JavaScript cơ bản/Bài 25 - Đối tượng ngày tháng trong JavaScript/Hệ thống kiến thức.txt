@@ -1,0 +1,34 @@
+* Đối tượng ngày tháng trong JavaScript
+	- Đối tượng ngày tháng là gì !?
+		+ Đối tượng ngày tháng là một tập hợp các thông tin về thời gian (thứ, ngày, tháng, năm, giờ, phút, giây, mili giây, múi giờ) của một 		thời điểm nào đó.
+	- Cách khai báo (khởi tạo) một đối tượng ngày tháng
+		+ Để khai báo một đối tượng ngày tháng, ta sử dụng cấu trúc new Date()
+   		+ Cấu trúc new Date() được chia làm bốn cú pháp chính:
+			Cú pháp 1: new Date()
+			Cú pháp 2: new Date(milliseconds)
+			Cú pháp 3: new Date(year, month, day, hours, minutes, seconds, milliseconds)
+			Cú pháp 4: new Date(chuỗi ngày tháng)
+	- new Date()
+		+ Cú pháp new Date() dùng để tạo một đối tượng ngày tháng với các thông tin về thời gian sẽ là thời điểm hiện tại (thời điểm khi câu 		lệnh được thực thi).
+	- new Date(milliseconds)
+		+ Cú pháp new Date(milliseconds) dùng để tạo một đối tượng ngày tháng với thời điểm là sau ngày 01/01/1970 00:00:00 (theo giờ tiêu 		chuẩn UTC) một khoảng thời gian milliseconds. Các thông tin về thời gian của đối tượng ngày tháng sẽ được hệ thống tự động xác định 		dựa vào thời điểm đó.
+		+ Ví dụ: 1296000000 milliseconds bằng với 15 ngày. Khi thực thi new Date(1296000000) thì ta sẽ được một đối tượng ngày tháng với thời 		điểm là sau 01/01/1970 00:00:00 (theo giờ tiêu chuẩn UTC) 15 ngày.
+	- new Date(year, month, day, hours, minutes, seconds, milliseconds)
+		+ Cú pháp new Date(year, month, day, hours, minutes, seconds, milliseconds) dùng để tạo một đối tượng ngày tháng với các thông tin về 		thời gian sẽ do bạn tự xác định bằng các đối số year, month, day, hours, minutes, seconds, milliseconds
+		+  Ngoài ra, với cú pháp này thì ta không nhất thiết phải điền đủ bảy đối số, chỉ cần từ hai đối số trở lên là được, các đối số còn 		lại hệ thống tự động thiết lập giá trị mặc định cho nó.
+
+	- Như chúng ta đã biết:
+		Một năm có tối đa 12 tháng. Nên đối số month chỉ có thể nhập từ 0 đến 11
+		Một tháng có tối đa 31 ngày. Nên đối số day chỉ có thể nhập từ 1 đến 31
+		Một ngày có tối đa 24 giờ. Nên đối số hours chỉ có thể nhập từ 0 đến 23
+		Một giờ có tối đa 60 phút. Nên đối số minutes chỉ có thể nhập từ 0 đến 59
+		Một phút có tối đa 60 giây. Nên đối số seconds chỉ có thể nhập từ 0 đến 59
+		Một giây có tối đa 1000 mili giây. Nên đối số milliseconds chỉ có thể nhập từ 0 đến 999
+		-> Vậy "Nếu ta nhập đối số với giá trị nằm ngoài phạm vi cho phép thì chuyện gì sẽ xảy ra !?"
+		-> Trả lời:
+ 			Khi một đối số có giá trị nằm ngoài phạm vi cho phép (lớn hơn) thì hệ thống sẽ tự động tính toán để xác định giá trị thích hợp 			cho đối số, rồi sau đó dùng phần còn dư để cộng thêm vào giá trị của đối số đứng trước nó.
+ 			Ví dụ: new Date(2017,6,4,15,130,0) có đối số phút là 130 tương đương với 2 giờ 10 phút, khi đó new Date(2017,6,4,15,130,0) sẽ 			bằng với new Date(2017,6,4,17,10,0)
+ 			Khi một đối số có giá trị nằm ngoài phạm vi cho phép (nhỏ hơn) thì hệ thống sẽ tự động tính toán để xác định giá trị thích hợp 			cho đối số, rồi sau đó giá trị của đối số đứng trước nó sẽ bị trừ đi một phần bằng với phần còn thiếu.
+ 			Ví dụ: new Date(2017,6,4,15,-90,0 có đối số phút là -90 tương đương với -1 giờ -30 phút, khi đó new Date(2017,6,4,15,-90,0) sẽ 			bằng với new Date(2017,6,4,13,30,0)
+	- new Date(chuỗi ngày tháng)
+		+ Cú pháp new Date(chuỗi ngày tháng) dùng để tạo một đối tượng ngày tháng với các thông tin về thời gian sẽ được hệ thống tự động xác 		định dựa vào chuỗi ngày tháng do bạn đưa ra.

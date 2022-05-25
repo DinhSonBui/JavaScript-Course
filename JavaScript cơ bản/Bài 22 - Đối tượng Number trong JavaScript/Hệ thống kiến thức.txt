@@ -1,0 +1,45 @@
+* Đối tượng Number trong JavaScript
+	- Trong JavaScript có một đối tượng được xây dựng sẵn tên là Number.
+	- Đối tượng Number có các phương thức và thuộc tính, với việc truy cập vào các phương thức và thuộc tính đó, ta sẽ có thể làm được một số công 	việc như:
+		+ Kiểm tra một giá trị nào đó có phải là số nguyên hay không.
+		+ Kiểm tra một giá trị nào đó có phải là NaN hay không.
+		+ Lấy số lớn nhất có thể trong JavaScript. ....
+	- Dưới đây là danh các thuộc tính của đối tượng Number:
+		Thuộc tính		Mô tả chức năng
+		MAX_VALUE		Trả về số lớn nhất có thể trong JavaScript
+		MIN_VALUE		Trả về số gần với số 0 nhất trong JavaScript
+		POSITIVE_INFINITY	Trả về giá trị dương vô cực (Infinity)
+		EGATIVE_INFINITY	Trả về giá trị âm vô cực (-Infinity)
+	- Dưới đây là danh các phương thức của đối tượng Number:
+		Phương thức	Mô tả chức năng
+		isFinite()	Kiểm tra xem một giá trị nào đó có phải là số hữu hạn hay không
+		sInteger()	Kiểm tra xem một giá trị nào đó có phải là số nguyên hay không
+		isNaN()		Kiểm tra xem một giá trị nào đó có phải là NaN hay không
+	- Thuộc tính MAX_VALUE
+		+ Thuộc tính MAX_VALUE trả về số lớn nhất có thể trong JavaScript.
+		+ Lưu ý: Nếu một số nào đó lớn hơn MAX_VALUE thì nó chỉ có thể là dương vô cực (Infinity)
+	- Thuộc tính MIN_VALUE
+		+ Thuộc tính MIN_VALUE trả về số gần với số 0 nhất.
+		+ Lưu ý: Nếu một số nào đó gần với số 0 hơn MIN_VALUE thì số đó chính là số 0.
+	- Thuộc tính POSITIVE_INFINITY
+		+ Thuộc tính POSITIVE_INFINITY trả về giá trị dương vô cực (Infinity)
+			(Giá trị dương vô cực được xem là giá trị lớn hơn tất cả các số trong JavaScript)
+	- Thuộc tính NEGATIVE_INFINITY
+		+ Thuộc tính NEGATIVE_INFINITY trả về giá trị âm vô cực (-Infinity)
+			(Giá trị âm vô cực được xem là giá trị nhỏ hơn tất cả các số trong JavaScript)
+	- Phương thức isFinite()
+		+ Phương thức isFinite() dùng để kiểm tra xem một giá trị nào đó có phải là số hữu hạn hay không.
+			Nếu phải thì trả về giá trị true.
+			Nếu không thì trả về giá trị false.
+		+  Phương thức isFinite() của đối tượng Number khác với hàm isFinite() toàn cục:
+			Hàm isFinite() toàn cục sẽ chuyển giá trị về dạng số rồi mới kiểm tra xem giá trị đó có phải là số hữu hạn hay không.
+			Phương thức isFinite() của đối tượng Number thì không chuyển giá trị về dạng số, do đó sẽ không trả về true cho bất kỳ giá trị 			nào không thuộc kiểu dữ liệu number.
+	-  Phương thức isInteger()
+		+ Phương thức isInteger() dùng để kiểm tra xem một giá trị nào đó có phải là số nguyên hay không.
+			Nếu phải thì trả về giá trị true.
+			Nếu không thì trả về giá trị false.
+	- Phương thức isNaN()
+		+ Phương thức isNaN() dùng để kiểm tra xem một giá trị nào đó có phải là NaN hay không.
+			Nếu phải thì trả về giá trị true.
+			Nếu không thì trả về giá trị false.
+		+ Lưu ý: Giá trị phải có kiểu dữ liệu là number, phương thức isNaN() sẽ không trả về giá trị true cho bất kỳ giá trị nào không có kiểu 		dữ liệu là number.

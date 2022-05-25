@@ -1,0 +1,15 @@
+* Chế độ nghiêm ngặt (Strict Mode) trong JavaScript
+	- Khi trình duyệt thực thi một chương trình JavaScript, nó sẽ bỏ qua những lỗi lặt vặt . Việc trình duyệt bỏ qua những lỗi lặt vặt thường 	không gây ra ảnh hưởng nghiêm trọng. Tuy nhiên, ở một số trường hợp, nó sẽ phát sinh những điều mà ta không mong muốn. Để đảm bảo tránh tình 	trạng phát sinh những điều không mong muốn thì ta cần phải thiết lập chế độ nghiêm ngặt trong việc viết mã lệnh JavaScript
+	- Cách thiết lập chế độ nghiêm ngặt
+		+ Để thiết lập chế độ nghiêm ngặt, ta đặt cụm từ "use strict"; ở vị trí đầu tiên trong chương trình.
+		+ Lưu ý: Nếu cụm từ "use strict"; được đặt bên trong hàm thì nó chỉ dùng để thiết lập chế độ nghiêm ngặt cho hàm đó.
+	- Những điều không được phép trong chế độ nghiêm ngặt
+		+ Chế độ nghiệm ngặt bắt buộc người lập trình viên phải viết mã lệnh JavaScript theo đúng quy tắc cú pháp tiêu chuẩn để đảm bảo sự an 		toàn cho chương trình (giúp chương trình tránh được những cú pháp không tốt dẫn đến trường hợp bị lỗi).
+		+ Ví dụ như trong một chương trình JavaScript bình thường, khi ta gán giá trị cho một biến chưa được khai báo thì biến đó sẽ trở thành 		biến toàn cục. Tuy nhiên, trong chế độ nghiêm ngặt, việc gán giá trị cho một biến chưa được khai báo sẽ bị lỗi, điều này giúp ta tránh 		được tình trạng tạo một biến toàn cục không mong muốn.
+		+ Dưới đây là những điều mà bạn không được làm trong một chương trình đã được thiết lập chế độ nghiêm ngặt:
+			(1) Không được gán giá trị cho một biến (hoặc mảng, đối tượng, ....) khi nó chưa được khai báo.
+			(2) Không được phép xóa: biến, mảng, đối tượng, hàm, ....
+			(3) Trong việc khai báo hàm, các tham số của hàm không được trùng tên nhau.
+			(4) Một giá trị là số thì không được bắt đầu bằng số 0.
+			(5) Không được cập nhật giá trị của một thuộc tính chỉ có thể đọc
+			(6) Không được sử dụng các từ dưới đây để đặt tên cho biến: eval, arguments, implements, interface, let, package, private,      			protected, public, static, yield

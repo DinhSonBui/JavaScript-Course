@@ -1,0 +1,25 @@
+* Cách sử dụng hàm (Function) trong JavaScript
+	- Hàm là gì?
+		+ Hàm là một tập hợp gồm nhiều câu lệnh, các câu lệnh này được sắp xếp theo một thứ tự xác định để xây dựng thành một chức năng cụ thể
+		+ Mỗi hàm sẽ có một cái tên và hàm chỉ thực thi khi nó được gọi đến tên.
+		+ Một hàm có thể được gọi nhiều lần (hay nói cách khác là không giới hạn số lần gọi hàm).
+	- Phân loại hàm
+		+ Hàm được chia làm hai loại cơ bản: hàm không có tham số & hàm có tham số
+		+ Hàm không có tham số là hàm mà kết quả thực thi của nó luôn luôn không thay đổi.
+		+ Hàm có tham số là loại hàm mà khi gọi hàm ta phải truyền giá trị vào cho nó. Tùy vào giá trị được truyền mà hàm sẽ thực thi và cho 		ra kết quả khác nhau.
+	- Cách khai báo & gọi hàm "không có tham số"
+		+ Để khai báo (khởi tạo) một hàm thuộc thoại không có tham số, ta sử dụng cú pháp như sau:
+			function tên hàm() {
+    			//Danh sách các câu lệnh của hàm
+			}
+		+ Để gọi một hàm thuộc loại không có tham số, ta sử dụng cú pháp: tên hàm()
+	- Cách khai báo & gọi hàm "có tham số"
+		+ Để khai báo một hàm thuộc thoại có tham số, ta sử dụng cú pháp như sau:
+			function tên hàm(tham số thứ nhất, tham số thứ hai, tham số thứ ba, ....) {
+    			//Danh sách các câu lệnh của hàm
+			}
+		+ Đối với hàm có tham số, khi gọi hàm ta phải truyền giá trị cho các tham số theo cú pháp như sau:
+			tên hàm(giá trị tham số thứ nhất, giá trị tham số thứ hai, giá trị tham số thứ ba, ....)
+	- Gọi hàm thông qua một sự kiện : Ta có thể thiết lập việc một hàm nào đó sẽ được thực thi khi một sự kiện nào đó xảy ra (Ví dụ như: khi người 	dùng click chuột vào một phần tử, dí chuột vào một phần tử, ....) bằng cách đặt câu lệnh gọi hàm vào bên trong thuộc tính sự kiện của phần tử.
+	- Lệnh return : Lệnh return dùng để trả về cho hàm một giá trị.
+		+ Lưu ý: Trong một hàm, sau khi thực thi xong lệnh return thì hàm sẽ kết thúc (tức là những câu lệnh nằm phía sau lệnh return sẽ không 		được thực thi). Cho nên trong một hàm, lệnh return cần phải được đặt ở vị trí cuối cùng.

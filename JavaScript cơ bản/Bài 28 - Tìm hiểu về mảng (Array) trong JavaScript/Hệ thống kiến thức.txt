@@ -1,0 +1,70 @@
+* Tìm hiểu về mảng (Array) trong JavaScript
+	- Mảng là gì !?
+		+ Mảng là một loại biến đặc biệt, nó có thể lưu trữ nhiều giá trị đồng thời.
+		+ Ví dụ, câu lệnh bên dưới dùng để tạo một mảng có tên là mobile và mảng đó chứa năm giá trị:HTC, Nokia, SamSung, LG, Apple
+		var mobile = ["HTC", "Nokia", "SamSung", "LG", "Apple"];
+	- Trường hợp sử dụng mảng
+		+ Trường hợp sử dụng mảng thì rất đa dạng.
+		+ Tuy nhiên, trong đó chỉ có hai trường hợp là chủ yếu:
+			Sử dụng mảng để lưu trữ các giá trị thuộc cùng một thể loại.
+			=> Ví dụ var mobile = ["HTC", "Nokia", "SamSung", "LG", "Apple"];
+ 			Sử dụng mảng để lưu trữ các giá trị liên quan đến một đối tượng.
+			=> Ví dụ var SinhVien = ["Nguyễn Thành Nhân", "Nam", 1993, "Cần Thơ"];
+	- Cách khai báo (khởi tạo) một mảng
+		+ Để khai báo một mảng, ta sử dụng cú pháp như sau:
+			var tên mảng = [phần tử thứ nhất, phần tử thứ hai, phần tử thứ ba, ...., phần tử thứ N];\
+		+ Giá trị của các phần tử mảng có thể là: chuỗi, số, biến, mảng ....
+	- Cách truy cập vào phần tử mảng
+		+ Thông thường, chúng ta truy cập vào phần tử mảng để:
+			Lấy giá trị của phần tử mảng.
+			Hoặc cập nhật giá trị cho phần tử mảng.
+		+ Để truy cập vào phần tử mảng thì ta sử dụng cú pháp như sau: tên mảng[chỉ số của phần tử mảng]
+	- "Mảng kết hợp" là gì !?
+		+ Mảng kết hợp là loại mảng mà các phần tử của nó không được xác định bởi chỉ số, mà được xác định bằng một cái tên (tên này do chúng 		ta tự đặt).
+		+ Để khai báo một mảng kết hợp thì trước tiên ta phải khai báo một mảng rỗng, sau đó thêm từng phần tử vào mảng.
+		+ VD
+			<script>
+    				var SinhVien = [];
+    				SinhVien["name"] = "Nguyễn Thành Nhân";
+    				SinhVien["year"] = 1993;
+    				SinhVien["city"] = "Cần Thơ";
+			</script>
+		+ Để truy cập vào phần tử của mảng kết hợp thì ta dùng cú pháp tên mảng["tên phần tử"]
+	- Mảng hai chiều & mảng đa chiều
+		+ Như chúng ta đã biết, giá trị của các phần tử mảng có thể là: chuỗi, số, biến, ....
+		+ Tuy nhiên, nó còn có thể là một mảng khác.
+		+ Để truy cập vào phần tử của mảng hai chiều, ta sử dụng cú pháp như sau:
+			tên mảng[chỉ số của phần tử mảng cấp một][chỉ số của phần tử mảng cấp hai];
+		+ Để truy cập vào phần tử của mảng n chiều, ta sử dụng cú pháp như sau:
+		(Lưu ý: Cụm từ "chỉ số của phần tử mảng cấp" tôi sẽ viết tắt là cscptmc)
+		tên mảng[cscptmc 1][cscptmc 2][cscptmc 3]...[cscptmc n - 2][cscptmc n - 1][cscptmc n];
+	_  Cách lặp qua một lần các phần tử mảng
+		+ Chúng ta có thể sử dụng vòng lặp for để lặp qua một lần các phần tử mảng.
+		+ Ví dụ: Sử dụng một vòng lặp for để lặp qua một lần mảng một chiều
+			<script>
+    				var motorbike = [
+        			"Honda",
+        			"Yamaha",
+        			"Suzuki",
+        			"SYM",
+        			"Piaggio"
+    				];
+    				for(var i = 0; i < motorbike.length; i++){
+        			document.write("- " + motorbike[i] + "<br>");
+    				}
+			</script>
+
+		+ Ví dụ: Sử dụng hai vòng lặp for để lặp qua một lần mảng hai chiều
+			<script>
+   		 		var data = [
+        				["HTC", "Nokia", "SamSung", "LG", "Apple"],
+        				["Honda", "Suzuki", "Yamaha"],
+        				["Nguyễn Thành Nhân", "Nam", 1993, "Cần Thơ"]
+    				];
+    				for(var i = 0; i < data.length; i++){
+        			for(var j = 0; j < data[i].length; j++){
+            				document.write("- " + data[i][j] + "<br>");
+        			}
+        			document.write("<hr>");
+    				}
+			</script>

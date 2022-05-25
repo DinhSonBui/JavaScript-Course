@@ -1,0 +1,32 @@
+* Cách sử dụng biểu thức chính quy trong JavaScript
+	- Giới thiệu phương thức match() trong JavaScript
+		+ Phương thức match() dùng để trả về ký tự (hoặc chuỗi ký tự) trùng khớp với ký tự (hoặc chuỗi ký tự) mà bạn muốn tìm kiếm bên trong 		một chuỗi nào đó.
+		+ Tuy nhiên, có hai vấn đề lớn đối với việc tìm kiếm ký tự trong chuỗi bằng phương thức match():
+			Thứ nhất: Phương thức match() phân biệt trường hợp chữ in hoa và chữ thường.
+			Thứ hai: Phương thức match() chỉ trả về kết quả đầu tiên được tìm thấy.
+	-  Biểu thức chính quy
+		+ Biểu thức chính quy (Regular Expression) dùng để xây dựng nên một mẫu tìm kiếm chuỗi
+		+ Khi bạn muốn tìm một thứ gì đó bên trong chuỗi thì biểu thức chính quy sẽ mô tả thứ mà bạn đang muốn tìm.	
+		+ Biểu thức chính quy sẽ có cú pháp như sau: /ký tự hoặc chuỗi ký tự mà bạn muốn tìm/bổ nghĩa
+		+ Trong đó, "bổ nghĩa" có hai loại phổ biến:
+			i không phân biệt chữ in hoa hay chữ thường đối với ký tự hoặc chuỗi ký tự mà bạn muốn tìm.
+			g tìm tất cả các trường hợp trùng khớp.
+ 					VD : 
+						<script>
+    							var text = "Web cơ bản (webcoban.vn) hướng dẫn làm website";
+    							var a = text.match(/wEb/i);
+						</script>
+						-> sẽ tìm thấy chữ "Web"
+					Ví dụ: Tìm tất cả những chữ web bên trong chuỗi text
+						<script>
+    							var text = "Web cơ bản (webcoban.vn) hướng dẫn làm website";
+    							var a = text.match(/web/g);
+						</script>
+						-> Phương thức match() sẽ tìm thấy:  Web cơ bản ("web"coban.vn) hướng dẫn làm "web"site
+					
+					VD Tìm tất cả những chữ wEB (không phân biệt trường hợp chữ in hoa hay chữ thường) bên trong chuỗi text
+						<script>
+    							var text = "Web cơ bản (webcoban.vn) hướng dẫn làm website";
+    							var a = text.match(/wEB/gi);
+						</script>
+						-> Phương thức match() sẽ tìm thấy: "Web" cơ bản ("web"coban.vn) hướng dẫn làm "web"site

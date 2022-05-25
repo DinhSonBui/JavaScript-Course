@@ -1,0 +1,23 @@
+* Cách sử dụng biến (Variable) trong JavaScript
+	- Biến là gì?
+		+ Biến cũng giống như là một cái thùng chứa dùng để lưu trữ một giá trị dữ liệu
+		  Ví dụ, kịch bản bên dưới có một biến tên là name và nó lưu trữ giá trị Nguyễn Thành Nhân.  var name = "Nguyễn Thành Nhân";
+		+ Biến giúp người lập trình viên đơn giản hóa việc sử dụng một giá trị nhiều lần bằng cách gọi tên biến.
+	-  Cách khai báo một biến
+		+ Để khai báo một biến (hay còn gọi là tạo một biến), ta sử dụng cú pháp như sau: var tên biến;
+		+ Sau khi khai báo, nếu biến vẫn chưa được gán giá trị thì mặc định nó sẽ có giá trị là undefined . Để gán giá trị cho một biến, ta 
+		sử dụng cú pháp như sau:  tên biến = giá trị;
+		+ Cập nhật giá trị của biến : Sau khi một biến đã được gán giá trị, nếu muốn cập nhật cho nó một giá trị mới thì ta sử dụng cú pháp 
+		như sau: tên biến = giá trị mới;
+		+ Khai báo biến và gán giá trị đồng thời : Thay vì phải chia thành hai bước: (1) khai báo biến (2) gán giá trị thì ta có thể gộp
+		 chung thành một bước khai báo biến rồi gán giá trị luôn. VD   var hoten = "Lữ Bố";
+	- Khai báo nhiều biến đồng thời
+		+ Ta có thể khai báo nhiều biến một lượt bằng cách dùng dấu phẩy ngăn giữa các tên biến, rồi sau đó gán giá trị cho từng biến.
+		+ Ta cũng có thể vừa khai báo vừa gán giá trị cho biến (Tuy nhiên, không bắt buộc phải gán giá trị cho tất cả các biến cùng một lượt)
+	- Quy tắc đặt tên biến
+		+ Tên biến tuyệt đối không được phép chứa các ký tự đặt biệt (Ví dụ như: @, #, !, %, ^, &, ....)
+		+ Tên biến không được bắt đầu bằng một chữ số.
+		+ Tên biến có phân biệt trường hợp chữ in hoa và chữ thường (Ví dụ, webcoban và Webcoban là hai biến khác nhau)
+		+ Tên biến phải duy nhất (không được khai báo một biến có tên trùng với tên của một biến đã được khai báo trước đó)
+		+ Không được đặt tên biến trùng với các từ dành riêng trong JavaScript
+	- Giá trị của biến : Giá trị của biến rất đa dạng, có thể là: một chuỗi ký tự, một số, một biến khác, một biểu thức, undefined, ....

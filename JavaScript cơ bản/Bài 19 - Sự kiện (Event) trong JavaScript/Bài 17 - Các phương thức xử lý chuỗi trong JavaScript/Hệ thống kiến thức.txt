@@ -1,0 +1,57 @@
+* Các phương thức xử lý chuỗi trong JavaScript
+	- Một chuỗi sẽ có các phương thức và thuộc tính, với việc truy cập vào các phương thức và thuộc tính của chuỗi, ta có thể làm được những công việc như: đếm số lượng ký tự của chuỗi, chuyển toàn bộ ký tự của chuỗi về dạng chữ in hoa, chuyển toàn bộ ký tự của chuỗi về dạng chữ thường, trích xuất một chuỗi con bên trong chuỗi, ....
+	-  Khi làm việc với các phương thức thì không dùng đến vị trí mà là dùng đến chỉ số
+	-  Dưới đây là một số phương thức và thuộc tính thường được sử dụng nhất trong việc xử lý chuỗi:
+	Phương thức / Thuộc tính	Mô tả chức năng
+		length			Trả về số lượng ký tự của chuỗi
+		toUpperCase()		Chuyển toàn bộ ký tự của chuỗi về dạng chữ in hoa
+		toLowerCase()		Chuyển toàn bộ ký tự của chuỗi về dạng chữ thường
+		concat()		Nối các chuỗi lại với nhau
+		indexOf()		Trả về chỉ số của chuỗi trùng khớp được tìm thấy đầu tiên (Khi bạn muốn tìm một chuỗi con nào đó trong chuỗi)
+		lastIndexOf()		Trả về chỉ số của chuỗi trùng khớp được tìm thấy sau cùng (Khi bạn muốn tìm một chuỗi con nào đó trong chuỗi)
+		charAt()		Trích xuất một ký tự trong chuỗi
+		substring()		Trích xuất một chuỗi con trong chuỗi
+		substr()		Trích xuất một chuỗi con trong chuỗi
+		replace()		Thay thế một nội dung nào đó trong chuỗi bằng nội dung mới
+	- Đếm số lượng ký tự của chuỗi : Để đếm số lượng ký tự của một chuỗi, ta truy cập vào thuộc tính length của chuỗi đó.
+	Ví dụ:
+	<script>
+    		var text = "Tai lieu hoc JavaScript";
+    		var a = text.length; //Biến a sẽ có giá trị là 23
+		var b = "JavaScript".length; //Biến b sẽ có giá trị là 10
+	</script>
+	- Chuyển chuỗi về dạng chữ in hoa : Để chuyển toàn bộ ký tự của một chuỗi về dạng chữ in hoa, ta truy cập vào phương thức toUpperCase() của 	chuỗi đó.
+		Ví dụ:
+		<script>
+    			var text = "Tai lieu hoc JavaScript";
+    			var a = text.toUpperCase(); //Biến a sẽ có giá trị là TAI LIEU HOC JAVASCRIPT
+			var b = "JavaScript".toUpperCase(); //Biến b sẽ có giá trị là JAVASCRIPT    
+		</script>
+	- Chuyển chuỗi về dạng chữ thường
+		+ Để chuyển toàn bộ ký tự của một chuỗi về dạng chữ thường, ta truy cập vào phương thức toLowerCase() của chuỗi đó.
+	-  Nối các chuỗi lại với nhau
+		+ Thay vì sử dụng toán tử + để nối các chuỗi lại với nhau thì ta cũng có thể sử dụng phương thức concat() với cú pháp như sau để nối 			chuỗi:  string1.concat(string2, string3, ..., stringN)
+	- Xác định chỉ số của một chuỗi con
+		+ Ta có thể xác định được chỉ số của một chuỗi con nào đó nằm bên trong chuỗi bằng cách sử dụng phương thức indexOf() hoặc 		lastIndexOf().
+		+ Cú pháp: string.indexOf(chuỗi mà bạn xác định chỉ số của nó  trong chuỗi string)
+			   string.lastIndexOf(chuỗi mà bạn xác định chỉ số của nó  trong chuỗi string)
+		+ Phương thức indexOf() sẽ trả về chỉ số của chuỗi trùng khớp được tìm thấy đầu tiên.
+		+ Phương thức lastIndexOf() sẽ trả về chỉ số của chuỗi trùng khớp được tìm thấy cuối cùng.
+		+ Ta có thể thêm vào phương thức indexOf() và lastIndexOf() tham số thứ hai để xác định vị trí bắt đầu tìm kiếm chuỗi.
+		+ Phương thức indexOf() và lastIndexOf() sẽ trả về -1 nếu như không tìm thấy chuỗi trùng khớp
+	- Trích xuất một ký tự trong chuỗi
+		+ Ta có thể trích xuất một ký tự nào đó trong chuỗi bằng cách sử dụng phương thức charAt() với cú pháp như sau:
+			string.charAt(chỉ số của ký tự mà bạn muốn trích xuất)
+		+ Trích xuất một chuỗi con
+			 Ta có thể trích xuất được một chuỗi con bên trong chuỗi bằng phương thức substring() hoặc substr()
+			 Phương thức substring()
+				Cú pháp:  string.substring(start, end)
+						start là chỉ số của ký tự bắt đầu được trích xuất
+						end là chỉ số của ký tự kết thúc việc trích xuất
+			Phương thức substr()
+				Cú pháp:   string.substr(start, length)
+						start là chỉ số của ký tự bắt đầu được trích xuất
+						length là số lượng ký tự được trích xuất
+	- Thay thế nội dung trong chuỗi
+		+ Để thay thế một nội dung nào đó trong chuỗi bằng nội dung mới, ta sử dụng phương thức replace() với cú pháp như sau:
+		string.replace(nội dung cũ, nội dung mới)

@@ -1,0 +1,19 @@
+* Toán tử so sánh & Toán tử logic trong JavaScript
+	- Dưới đây là danh sách các toán tử so sánh trong JavaScript:
+		Toán tử	Ý nghĩa của toán tử
+		>	Lớn hơn
+		>=	Lớn hơn hoặc bằng
+		<	Nhỏ hơn
+		<=	Nhỏ hơn hoặc bằng
+		==	Bằng giá trị (không phân biệt kiểu dữ liệu)
+		===	Bằng giá trị (phải có chung kiểu dữ liệu)
+		!=	Khác giá trị
+		!==	Khác giá trị hoặc khác kiểu dữ liệu
+	- Toán tử logic
+		+ Toán tử logic là loại toán tử dùng để xác định mối quan hệ logic giữa các giá trị logic (true, false)
+		+ Toán tử logic được chia làm ba loại: && || !
+		+ Sau đây là thứ tự sắp xếp độ ưu tiên giảm dần của ba toán tử logic: ! ==> && ==> ||
+		+ Ngoài ra, ta có thể sử dụng toán tử () để nhóm những biểu thức mà bạn muốn được thực thi trước.
+	- Biểu thức logic
+		+ Biểu thức logic thường là một tập hợp gồm hai hoặc nhiều biểu thức so sánh và các toán tử logic.
+		+ Tương tự như biểu thức so sánh, biểu thức logic sẽ trả về một trong hai giá trị: true hoặc false.
